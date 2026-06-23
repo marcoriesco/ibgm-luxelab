@@ -1,0 +1,267 @@
+<!DOCTYPE html><html class="light" lang="pt-br" style=""><head><script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Informações Práticas - Luxe Lab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#e9c176",
+                    "outline-variant": "#c4c7c7",
+                    "tertiary-fixed-dim": "#c8c6c2",
+                    "surface-bright": "#fbf9f8",
+                    "inverse-primary": "#c8c6c5",
+                    "on-surface": "#1b1c1c",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#000000",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary": "#775a19",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f2f0f0",
+                    "inverse-surface": "#303031",
+                    "tertiary": "#000000",
+                    "on-secondary-container": "#785a1a",
+                    "surface-variant": "#e4e2e2",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474744",
+                    "on-secondary-fixed": "#261900",
+                    "primary-container": "#1c1b1b",
+                    "secondary-fixed": "#ffdea5",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "tertiary-fixed": "#e5e2de",
+                    "tertiary-container": "#1c1c19",
+                    "on-tertiary-container": "#858480",
+                    "secondary-container": "#fed488",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e4e2e2",
+                    "background": "#fbf9f8",
+                    "surface-dim": "#dbdad9",
+                    "on-surface-variant": "#444748",
+                    "surface-container-low": "#f5f3f3",
+                    "primary-fixed": "#e5e2e1",
+                    "surface-tint": "#5f5e5e",
+                    "surface": "#fbf9f8",
+                    "surface-container": "#efeded",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e9e8e7",
+                    "on-background": "#1b1c1c",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-primary-fixed": "#1c1b1b",
+                    "on-primary-container": "#858383",
+                    "outline": "#747878",
+                    "on-primary-fixed-variant": "#474746"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "max-width": "1280px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Zilla Slab"],
+                    "headline-lg": ["Zilla Slab"],
+                    "label-sm": ["Zilla Slab"],
+                    "body-lg": ["Zilla Slab"],
+                    "body-md": ["Zilla Slab"],
+                    "label-md": ["Zilla Slab"],
+                    "headline-lg-mobile": ["Zilla Slab"],
+                    "display-lg-mobile": ["Zilla Slab"],
+                    "headline-md": ["Zilla Slab"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Zilla Slab', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow { box-shadow: 0 8px 32px rgba(0,0,0,0.04); }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- Top App Bar -->
+<header class="bg-background fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 border-b border-outline-variant">
+<div class="flex items-center">
+<h1 class="font-headline-md text-headline-md-mobile font-bold text-primary uppercase tracking-widest">Luxe Lab</h1>
+</div>
+<button class="text-primary active:scale-95 transition-transform duration-150">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="pt-20 px-margin-mobile max-w-md mx-auto">
+<!-- Main Title -->
+<section class="mb-8 mt-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-1">Guia de Viagem</span>
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-primary">Informações Práticas</h2>
+</section>
+<!-- Power & Adapters -->
+<div class="space-y-6 mb-12">
+<!-- Voltagem Card -->
+<div class="bg-surface-container-lowest border border-outline-variant p-8 rounded-lg editorial-shadow">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">bolt</span>
+<h3 class="font-headline-md text-headline-md-mobile text-primary">Voltagem</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface">A voltagem padrão na França é de <span class="font-bold text-primary">230V com frequência de 50 Hz.&nbsp;</span>Certifique-se de que seus aparelhos são bivolt antes de conectá-los.</p>
+</div>
+<!-- Adaptador Card -->
+<div class="bg-surface-container-lowest border border-outline-variant p-8 rounded-lg editorial-shadow">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">power</span>
+<h3 class="font-headline-md text-headline-md-mobile text-primary">Adaptador de Tomada</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">As tomadas são do Tipo C (dois pinos redondos) e do Tipo E (dois pinos redondos mais um pino macho de aterramento). Aparelhos brasileiros de dois pinos finos entram facilmente, mas é necessário um adaptador para os de três pinos.</p>
+</div><div class="bg-surface-container-lowest border border-outline-variant rounded-lg editorial-shadow overflow-hidden" x-data="{ open: false }">
+  <button @click="open = !open" class="w-full flex items-center justify-between p-8 text-left focus:outline-none">
+    <div class="flex items-center gap-4">
+      <span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">checkroom</span>
+      <h3 class="font-headline-md text-headline-md-mobile text-primary"><div>Curso Passaporte Fashionista e Visitas Não Monitoradas</div><div>De 29/06 a 04/07</div></h3>
+    </div>
+    <span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 rotate-180" :class="open ? 'rotate-180' : ''">expand_more</span>
+  </button>
+  <div x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform -translate-y-2" x-transition:enter-end="opacity-100 transform translate-y-0" class="px-8 pb-8">
+    <div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+      <p class="">A principal recomendação é: priorize o conforto! A programação inclui deslocamentos, caminhadas, visitas técnicas e períodos prolongados em pé.</p>
+      <p class="">Por isso, sugere-se optar por looks de alfaiataria confortável, que conciliam elegância, praticidade e bem-estar ao longo do dia. Também recomenda-se o uso de sapatos baixos e já amaciados, evitando estrear calçados durante a viagem. Tênis discretos, mocassins e sapatilhas confortáveis são excelentes opções.</p>
+      <p class="">Para maior comodidade e segurança, propõe-se o uso de bolsas transversais (crossbody), que permitem manter documentos, celular e itens pessoais sempre próximos ao corpo, especialmente durante os deslocamentos pela cidade.</p>
+      <p class="">Por fim, acompanhe a previsão do tempo nos dias que antecedem a viagem. É verão europeu e as temperaturas podem ser bastante elevadas, com registros que podem superar os 40°C em períodos de onda de calor. Dê preferência a roupas leves e tecidos respiráveis. Uma terceira peça também pode ser útil em ambientes fechados com ar-condicionado.<br></p>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Useful Apps Section -->
+<section class="mb-12">
+<h3 class="font-headline-md text-headline-md-mobile text-primary mb-6">Aplicativos úteis em Paris</h3>
+<div class="bento-grid">
+<!-- App 1: Citymapper -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center border border-transparent hover:border-outline-variant transition-all">
+<div class="w-12 h-12 mb-3 bg-white rounded-xl flex items-center justify-center overflow-hidden">
+<img alt="Citymapper" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjExu9Q6avL_2IJwtn99yuteZEhnRfH65_84PmF8F-0B7pucPq08qewIGPSoFmexxSB91vbqRqI-4EaURIFYzclqp3sioEVmjZDMSKL8IjCQ4ToKsB7yZIewSD8XMOvX1Yr-gvABHhXtAF4jYwTd6dvPA1lig_2g7qUO85BcVA7Nqz_LnPtb2vjN7v2HzFZguyn89-e-0qgbSbF7z92TtqlrJD2xHCUEktr8l3jXs_KJAopddNtQLh4jeP3UYGEZJlBMxHkTWBzV0">
+</div>
+<span class="font-label-md text-label-md text-primary font-bold mb-1">Citymapper</span>
+<p class="text-[12px] leading-tight text-on-surface-variant">Melhor app para transporte público e trajetos a pé.</p>
+</div>
+<!-- App 2: TheFork -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center border border-transparent hover:border-outline-variant transition-all">
+<div class="w-12 h-12 mb-3 bg-white rounded-xl flex items-center justify-center overflow-hidden">
+<img alt="TheFork" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjExu9Q6avL_2IJwtn99yuteZEhnRfH65_84PmF8F-0B7pucPq08qewIGPSoFmexxSB91vbqRqI-4EaURIFYzclqp3sioEVmjZDMSKL8IjCQ4ToKsB7yZIewSD8XMOvX1Yr-gvABHhXtAF4jYwTd6dvPA1lig_2g7qUO85BcVA7Nqz_LnPtb2vjN7v2HzFZguyn89-e-0qgbSbF7z92TtqlrJD2xHCUEktr8l3jXs_KJAopddNtQLh4jeP3UYGEZJlBMxHkTWBzV0">
+</div>
+<span class="font-label-md text-label-md text-primary font-bold mb-1">TheFork</span>
+<p class="text-[12px] leading-tight text-on-surface-variant">Reservas em restaurantes com descontos exclusivos.</p>
+</div>
+<!-- App 3: G7 -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center border border-transparent hover:border-outline-variant transition-all">
+<div class="w-12 h-12 mb-3 bg-white rounded-xl flex items-center justify-center overflow-hidden">
+<img alt="G7" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjExu9Q6avL_2IJwtn99yuteZEhnRfH65_84PmF8F-0B7pucPq08qewIGPSoFmexxSB91vbqRqI-4EaURIFYzclqp3sioEVmjZDMSKL8IjCQ4ToKsB7yZIewSD8XMOvX1Yr-gvABHhXtAF4jYwTd6dvPA1lig_2g7qUO85BcVA7Nqz_LnPtb2vjN7v2HzFZguyn89-e-0qgbSbF7z92TtqlrJD2xHCUEktr8l3jXs_KJAopddNtQLh4jeP3UYGEZJlBMxHkTWBzV0">
+</div>
+<span class="font-label-md text-label-md text-primary font-bold mb-1">G7 Taxi</span>
+<p class="text-[12px] leading-tight text-on-surface-variant">O aplicativo oficial e mais confiável de táxis da cidade.</p>
+</div>
+<!-- App 4: Google Translate -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center text-center border border-transparent hover:border-outline-variant transition-all">
+<div class="w-12 h-12 mb-3 bg-white rounded-xl flex items-center justify-center overflow-hidden">
+<img alt="Translate" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjExu9Q6avL_2IJwtn99yuteZEhnRfH65_84PmF8F-0B7pucPq08qewIGPSoFmexxSB91vbqRqI-4EaURIFYzclqp3sioEVmjZDMSKL8IjCQ4ToKsB7yZIewSD8XMOvX1Yr-gvABHhXtAF4jYwTd6dvPA1lig_2g7qUO85BcVA7Nqz_LnPtb2vjN7v2HzFZguyn89-e-0qgbSbF7z92TtqlrJD2xHCUEktr8l3jXs_KJAopddNtQLh4jeP3UYGEZJlBMxHkTWBzV0">
+</div>
+<span class="font-label-md text-label-md text-primary font-bold mb-1">Translate</span>
+<p class="text-[12px] leading-tight text-on-surface-variant">Essencial para cardápios e conversas rápidas.</p>
+</div>
+</div>
+</section>
+<!-- Safety Tips -->
+<section class="mb-12 bg-primary text-on-primary p-8 rounded-lg">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary-fixed">shield</span>
+<h3 class="font-headline-md text-headline-md-mobile">Segurança e cuidados</h3>
+</div>
+<ul class="space-y-4 font-body-md text-body-md opacity-90">
+<li class="flex gap-3">
+<span class="text-secondary-fixed font-bold">•</span>
+<span class="">Mantenha sua bolsa ou mochila sempre à frente do corpo em locais turísticos e no metrô.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-secondary-fixed font-bold">•</span>
+<span class="">Evite aceitar "ajuda" não solicitada em caixas eletrônicos ou máquinas de bilhetes.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-secondary-fixed font-bold">•</span>
+<span class="">Desconfie de abaixo-assinados ou pessoas pedindo sua atenção nas ruas próximas à Torre Eiffel.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-secondary-fixed font-bold">•</span>
+<span class="">Mantenha uma cópia digital do seu passaporte e documentos importantes na nuvem.</span>
+</li>
+</ul>
+</section>
+</main>
+<!-- Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface-container-lowest border-t border-outline-variant flex justify-around items-center px-4 py-3 pb-6">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-md text-label-md">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary font-bold active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">tips_and_updates</span>
+<span class="font-label-md text-label-md">Dicas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="font-label-md text-label-md">Galeria</span>
+</a>
+</nav>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.bg-surface-container-low').forEach(card => {
+            card.addEventListener('touchstart', () => {
+                card.style.transform = 'scale(0.98)';
+                card.style.transition = 'transform 0.1s';
+            });
+            card.addEventListener('touchend', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+
+
+
+
+
+
+</body></html>

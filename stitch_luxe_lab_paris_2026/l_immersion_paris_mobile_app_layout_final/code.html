@@ -1,0 +1,305 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="pt-br"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>L'Immersion Paris | Sua Jornada</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#303031",
+                    "on-tertiary-fixed-variant": "#474744",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#c8c6c2",
+                    "primary": "#000000",
+                    "surface-container-high": "#e9e8e7",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "surface": "#fbf9f8",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#efeded",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-primary-container": "#858383",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#e9c176",
+                    "background": "#fbf9f8",
+                    "on-primary-fixed-variant": "#474746",
+                    "secondary": "#775a19",
+                    "outline-variant": "#c4c7c7",
+                    "surface-container-low": "#f5f3f3",
+                    "on-secondary-container": "#785a1a",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-container-highest": "#e4e2e2",
+                    "secondary-container": "#fed488",
+                    "inverse-on-surface": "#f2f0f0",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#c8c6c5",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#000000",
+                    "surface-variant": "#e4e2e2",
+                    "tertiary-container": "#1c1c19",
+                    "secondary-fixed": "#ffdea5",
+                    "on-background": "#1b1c1c",
+                    "outline": "#747878",
+                    "primary-container": "#1c1b1b",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "surface-dim": "#dbdad9",
+                    "tertiary-fixed": "#e5e2de",
+                    "surface-tint": "#5f5e5e",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#e5e2e1",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#fbf9f8",
+                    "on-secondary-fixed": "#261900",
+                    "on-surface": "#1b1c1c",
+                    "on-tertiary-container": "#858480",
+                    "on-surface-variant": "#444748"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "max-width": "1280px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Zilla Slab"],
+                    "body-lg": ["Zilla Slab"],
+                    "body-md": ["Zilla Slab"],
+                    "label-md": ["Zilla Slab"],
+                    "display-lg": ["Zilla Slab"],
+                    "headline-md": ["Zilla Slab"],
+                    "headline-lg": ["Zilla Slab"],
+                    "display-lg-mobile": ["Zilla Slab"],
+                    "label-sm": ["Zilla Slab"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Zilla Slab', serif; }
+        .sepia-filter { filter: sepia(0.6) contrast(1.1) brightness(0.9); }
+        .glass-card { backdrop-filter: blur(12px); background-color: rgba(255, 255, 255, 0.85); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="bg-surface/80 backdrop-blur-md text-primary docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center h-20 px-4 md:px-20 max-w-full mx-auto">
+<h1 class="font-headline-md text-headline-md font-bold tracking-tight text-primary">
+                L'Immersion Paris
+            </h1>
+<div class="flex gap-4">
+<button class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pb-24">
+<!-- Hero Section -->
+<section class="relative h-[751px] w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A cinematic night view of the illuminated Eiffel Tower in Paris, standing majestically against a deep blue dusk sky with streaking clouds. The golden lights of the iron lattice structure reflect softly on the pavement below, creating a romantic and sophisticated atmosphere characteristic of high-end Parisian hospitality. The composition is centered and grand, evoking a sense of exclusive arrival." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBfOw_NoF6GJDl83vWdm94o4azyJvR435YFti-2j0RyBm3ngMYi8JM560j4rxah0BE34hVJeYv_3frR58eoazLn2wm-J1CZ3cjaKIxvXuY7fTZ1gzsNfij1hAxyISDMq4Ge5ZRDzjXYzzuIR8pXd7fnA5I_hkv7cuodS__6XcqKGGOO4ZRA3N9_mQxWMnQ9W8KUyCglrupXxHq0fhzfv-eNRvGI63x_ydzdQSQaTOyA6VCc0Cs31ks7o3dxWLJRbLvSIORp-P7RA4')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<!-- Floating Event Card -->
+<div class="absolute bottom-12 left-4 right-4 animate-fade-in-up">
+<div class="glass-card p-6 rounded-xl border border-white/20 shadow-2xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] mb-2 block">Próximo Compromisso</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-1">Jantar de Boas-vindas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span> 20:30 • Le Jules Verne
+                    </p>
+<div class="mt-6 flex justify-between items-center">
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all active:scale-95">
+                            Ver Detalhes
+                        </button>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Sua Programação Section -->
+<section class="mt-12 px-4">
+<div class="flex justify-between items-end mb-6">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Sua Programação</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Momentos exclusivos selecionados para você.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="bg-surface-container-low p-5 rounded-xl border border-outline-variant/30 flex justify-between items-center group active:bg-surface-container-high transition-colors">
+<div class="flex gap-4 items-center">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">palette</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase">Amanhã • 10:00</p>
+<h4 class="font-headline-md text-headline-md text-primary">Tour pelos Ateliês</h4>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+<div class="bg-surface-container-low p-5 rounded-xl border border-outline-variant/30 flex justify-between items-center active:bg-surface-container-high transition-colors">
+<div class="flex gap-4 items-center">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">location_on</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Quarta • 15:30</p>
+<h4 class="font-headline-md text-headline-md text-primary">Visita à Place Vendôme</h4>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Curadoria Parisiense (Sepia Carousel) -->
+<section class="mt-16 overflow-hidden">
+<h3 class="px-4 font-headline-lg-mobile text-headline-lg-mobile text-primary mb-6">Curadoria Parisiense</h3>
+<div class="flex overflow-x-auto gap-4 px-4 no-scrollbar snap-x">
+<!-- Card 1 -->
+<div class="flex-shrink-0 w-72 snap-start">
+<div class="relative h-96 rounded-xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center sepia-filter transition-transform duration-700 group-hover:scale-110" data-alt="A master chef artfully plating a gourmet dish in a classic French kitchen. The lighting is warm and directional, highlighting the fine textures of the ingredients. The scene is processed with a sophisticated sepia filter to align with a luxury editorial aesthetic, emphasizing timeless culinary tradition and exclusivity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGwmfDOuUBxN5WfHXbqars9wLAv0NSQRlXL1YmzBYr2D-UvCjoeoHZMYQ_-UCdLshYRkbfOOmSkQ-ARfwhCOOwpyOEAzAAuAH0m6wAPfWqrV3pmHcWOZBUmXwDVRfzf8nmm4LACSl3Gax8GucENZfOi1Qq2RcZ-OIrPch9tsPdUM91KHn3Q7C-kdFYI4pKzFiIPx1s0YGZc2l3bZV7xdIC1MfbxG4bgiZvKlRhtJ9oFFmphNwwu4MdyYpIR9P5k7yyn1RtAMFSccw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-6">
+<span class="font-label-sm text-label-sm text-white/70 uppercase mb-1 block">Gastronomia</span>
+<h4 class="font-headline-md text-headline-md text-white">Os Segredos de Alain Ducasse</h4>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex-shrink-0 w-72 snap-start">
+<div class="relative h-96 rounded-xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center sepia-filter transition-transform duration-700 group-hover:scale-110" data-alt="An elegant art gallery interior in Paris with minimalist white walls and high ceilings. Sculptures and paintings from an autumn exhibition are showcased under soft museum lighting. The sepia-toned finish adds a layer of vintage luxury and intellectual depth, perfect for a curated cultural experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAg9FIGijRcEml-Mt6COwHCNmzPGUKncHaripYc0_GwiIaXXrL9QqWKxRRzWxPSSXVPoYH-0pEsrGgNTbvuyjGoANjPM3C0yOpUpfCccVn_-DiGGmkv8mwY1vVZdvW2AmBv7TmzLKVXI1Prf7E7bfDznP-KvSQfnsOpGkpYDWdqq9Jso5kQ7ce5Z_dYCLeE8thbYNmtqCejFDzPirmc2mqmF1rOBuPYg_JWxKxghbjw5zFPu1W5T5XKNoxw_cRROQ_QRGwhgXzJxUg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-6">
+<span class="font-label-sm text-label-sm text-white/70 uppercase mb-1 block">Cultura</span>
+<h4 class="font-headline-md text-headline-md text-white">Exposições de Outono</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Information Grid -->
+<section class="mt-16 px-4 grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-3">auto_awesome</span>
+<h5 class="font-label-md text-label-md text-primary font-bold">Galerie Immersion</h5>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-3">article</span>
+<h5 class="font-label-md text-label-md text-primary font-bold">Conteúdo Complementar</h5>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-3">info</span>
+<h5 class="font-label-md text-label-md text-primary font-bold">Informações Práticas</h5>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary mb-3">support_agent</span>
+<h5 class="font-label-md text-label-md text-primary font-bold">Contatos Úteis</h5>
+</div>
+</section>
+<!-- Footer -->
+<footer class="mt-20 border-t border-outline-variant/10 bg-surface-container-lowest py-12 px-4 text-center">
+<div class="flex flex-col items-center gap-6">
+<div class="w-24 h-auto opacity-80">
+<!-- IBGM Logo Placeholder -->
+<div class="w-full h-8 bg-primary rounded flex items-center justify-center text-[8px] text-white font-bold tracking-widest">IBGM</div>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Realização</p>
+<p class="font-body-md text-body-md text-primary font-bold">Curadoria de Conteúdo</p>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/60 mt-4">
+                    © 2024 L'Immersion Paris. Todos os direitos reservados.
+                </p>
+</div>
+</footer>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="bg-surface fixed bottom-0 w-full flex justify-around py-3 pb-safe px-4 border-t border-outline-variant/20 shadow-[0_-4px_20px_rgba(0,0,0,0.04)] z-50 md:hidden rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-primary font-bold transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm">Accueil</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all duration-200" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-sm text-label-sm">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all duration-200" href="#">
+<span class="material-symbols-outlined">lightbulb</span>
+<span class="font-label-sm text-label-sm">Dicas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all duration-200" href="#">
+<span class="material-symbols-outlined">gallery_thumbnail</span>
+<span class="font-label-sm text-label-sm">Galeria</span>
+</a>
+</nav>
+<script>
+        // Micro-interaction: Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-md');
+                header.classList.remove('h-20');
+                header.style.height = '64px';
+            } else {
+                header.classList.remove('py-2', 'shadow-md');
+                header.classList.add('h-20');
+                header.style.height = '80px';
+            }
+        });
+
+        // Micro-interaction: Active state on nav items
+        const navItems = document.querySelectorAll('nav a');
+        navItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                navItems.forEach(i => {
+                    i.classList.remove('text-primary', 'font-bold');
+                    i.classList.add('text-on-surface-variant');
+                    const icon = i.querySelector('.material-symbols-outlined');
+                    if(icon) icon.style.fontVariationSettings = "'FILL' 0";
+                });
+                item.classList.add('text-primary', 'font-bold');
+                item.classList.remove('text-on-surface-variant');
+                const icon = item.querySelector('.material-symbols-outlined');
+                if(icon) icon.style.fontVariationSettings = "'FILL' 1";
+            });
+        });
+    </script>
+</body></html>

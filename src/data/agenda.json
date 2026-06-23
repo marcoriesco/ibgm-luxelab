@@ -1,0 +1,180 @@
+{
+  "DIA 1": [
+    {
+      "time": "20h30",
+      "title": "Jantar de boas-vindas",
+      "description": "Bateaux gastronômico no pôr do sol.\n\nO passeio acontece ocorrerá no início da noite parisiense, ainda com luz natural nesta época do ano. Sugere-se um traje casual elegante (smart casual), com peças de alfaiataria leve, vestidos, camisas, blazers leves ou conjuntos coordenados.\n\nNão há necessidade de traje formal, salto alto ou gravata. Recomenda-se priorizar o conforto, optando por calçados elegantes e práticos. Para as mulheres, sugere-se sapatos baixos ou salto bloco, evitando salto fino, que pode não ser a opção mais adequada para os deslocamentos e para o embarque e desembarque no barco.",
+      "metadata": [
+        "Port de la Bourdonnais"
+      ],
+      "imgUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAbLz7SfKN5QoXM-BTBUY5qMiMw-NsCb9AEk_uHZROJN3yckINaZbQzlzOulhhX691DS7MqV9ycwCYBG-bCpR2bL4pfKYNMTtrIl7OsYIXpTzYZIeu1N8PsB9QDedZ1BfIhOHa_ld5WD3HE1ZRwX99WUaA4ei6OzL-jxjc1fAxL4Qe6kybb1lCcLDSNvnDNWVQP0rYF_covKUeZYe8goAWLJa8EQ_TRRs06Ufd_Mhn7rGXXusU8phclE_D__tYvKlGHSvpj4xOwErs"
+    }
+  ],
+  "DIA 2": [
+    {
+      "time": "9h - 13h",
+      "title": "Masterclass - O Mercado de Luxo na Joalheria",
+      "description": "",
+      "metadata": [
+        "58 Avenue Grand Armée 75017"
+      ]
+    },
+    {
+      "time": "13h - 14h30",
+      "title": "Almoço Exclusivo & Networking",
+      "description": "",
+      "metadata": []
+    },
+    {
+      "time": "14h30",
+      "title": "Foto do Grupo",
+      "description": "Registro oficial de todos os participantes do Luxe Lab Paris 2026. Um momento para celebrar a união do grupo e eternizar a experiência.",
+      "metadata": []
+    },
+    {
+      "time": "15h - 17h",
+      "title": "Curso em Sala de Aula - Revistas e Moodboard",
+      "description": "",
+      "metadata": []
+    },
+    {
+      "time": "17h15",
+      "title": "Ação da Sunday Riley",
+      "description": "Experiência exclusiva de marca com a Sunday Riley, explorando as tendências de skincare e beleza no mercado de luxo parisiense.",
+      "metadata": [
+        "Galeries Lafayette - Champs Elysees"
+      ],
+      "imgUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD6yTf-C9Cd0F0GhZlgu71m629x76jVkUL7w-zHClMi-KREjlz_OYve1knTiO6t75EH2nNxCFFpKb6n2TtWS8wIyONBun7y7sK_HTutIVxfX3tLWcStgQLXkzXc_RhWRVIf9MoA73iq6GIResuB6OQ7BXhxRzIG9Icq6i-YWpxYmwsj5smtHTnfrlxL3M6fsb1Qsug6-NXysKD0FBvv3c7uLQPgNv5qdlTFKyK5inmmpDX6MGkojG10utVywI8SNOH-nwdosRPptCQ"
+    },
+    {
+      "time": "18h",
+      "title": "Visita ao RH Paris",
+      "description": "Visita técnica exclusiva para conhecer os processos e a cultura organizacional de uma das referências em gestão de luxo na capital francesa.",
+      "metadata": [
+        "23 Avenue des Champs-Élysées"
+      ]
+    }
+  ],
+  "DIA 3": [
+    {
+      "time": "9h30",
+      "title": "Masterclass - Mad Lords",
+      "description": "",
+      "metadata": [
+        "316 Rue Saint-Honoré 75001"
+      ]
+    },
+    {
+      "time": "13h",
+      "title": "Almoço",
+      "description": "",
+      "metadata": []
+    },
+    {
+      "time": "15h - 17h",
+      "title": "Masterclass - Vever",
+      "description": "",
+      "metadata": [
+        "9 Rue de La Paix 75002"
+      ]
+    },
+    {
+      "time": "17h",
+      "title": "Visita Samaritaine",
+      "description": "",
+      "metadata": [
+        "9 Rue de La Monnaie, 75001 Paris"
+      ]
+    }
+  ],
+  "DIA 4": [
+    {
+      "time": "11h",
+      "title": "Masterclass - Tiffany & Co.",
+      "description": "",
+      "metadata": [
+        "62 Av. Des Champs Elysées 75008"
+      ]
+    },
+    {
+      "time": "13h",
+      "title": "Almoço",
+      "description": "",
+      "metadata": []
+    },
+    {
+      "time": "15h - 16h30",
+      "title": "Galerie Dior",
+      "description": "",
+      "metadata": [
+        "11 Rue François Ier 75008"
+      ]
+    },
+    {
+      "time": "16h30",
+      "title": "Haute Joaillerie Dolce & Gabanna",
+      "description": "",
+      "metadata": [
+        "54 Avenue Montaigne 75008"
+      ]
+    },
+    {
+      "time": "19h",
+      "title": "Exposição Pomelatto",
+      "description": "",
+      "metadata": [
+        "Palais de Tokyo",
+        "13 Av. Du Président Wilson 75116"
+      ]
+    }
+  ],
+  "DIA 5": [
+    {
+      "time": "9h",
+      "title": "Saída La Vallée Vilage",
+      "description": "",
+      "metadata": [
+        "58 Avenue Grand Armée 75017"
+      ]
+    },
+    {
+      "time": "10h",
+      "title": "Café Boas Vindas & Masterclass - Novo Comportamento de Consumo e Sustentabilidade no Mercado de Luxo",
+      "description": "",
+      "metadata": []
+    },
+    {
+      "time": "11h",
+      "title": "Masterclass com Convidado Especial",
+      "description": "",
+      "metadata": [
+        "11 Rue François Ier 75008"
+      ]
+    },
+    {
+      "time": "13h",
+      "title": "Almoço",
+      "description": "",
+      "metadata": [
+        "54 Avenue Montaigne 75008"
+      ]
+    },
+    {
+      "time": "17h",
+      "title": "Transfer",
+      "description": "",
+      "metadata": [
+        "58 Avenue Grande Armée 75017"
+      ]
+    }
+  ],
+  "DIA 6": [
+    {
+      "time": "All Day",
+      "title": "Tour à região de Champagne",
+      "description": "Para a programação na região de Champagne, incluindo as visitas à Mercier e à Pommery e o almoço harmonizado, recomendamos produções elegantes e descomplicadas, adequadas a um dia de experiências e degustações em diferentes ambientes.",
+      "metadata": [],
+      "imgUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5m_pod3Fzp8B0rWt046-BWY7JgOZv2upn6iH_y_iq0KwtvUj0bSbq2KJ98uvQ0-si08W-Y8i-npyaMj0rlfTnXqb3y1Z4yWFz8OUQ_b69zCkoOs3zpLUTe0kvGqX56OgUea3AYKGFv1KESLt0CxDNA7T3GrGuoAdSW20TPg-DVFb7cgTBcaQeSB30DdXgJGJ6iVU9Atjv8NvwhdmcU5x7oDj-muWTnth9AwimI0fi9Qwt_fhCPndG-6c9ukACJi9c_oYZj5m1Xs4"
+    }
+  ]
+}

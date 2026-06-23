@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #fbf9f8;
+  --color-surface: #fbf9f8;
+  --color-surface-dim: #dbdad9;
+  --color-surface-bright: #fbf9f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3f3;
+  --color-surface-container: #efeded;
+  --color-surface-container-high: #e9e8e7;
+  --color-surface-container-highest: #e4e2e2;
+  
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #444748;
+  --color-inverse-surface: #303031;
+  --color-inverse-on-surface: #f2f0f0;
+  
+  --color-outline: #747878;
+  --color-outline-variant: #c4c7c7;
+  
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1c1b1b;
+  --color-on-primary-container: #858383;
+  --color-inverse-primary: #c8c6c5;
+  
+  --color-secondary: #775a19;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fed488;
+  --color-on-secondary-container: #785a1a;
+  
+  --color-secondary-fixed: #ffdea5;
+  --color-on-secondary-fixed: #261900;
+  --color-on-secondary-fixed-variant: #5d4201;
+  --color-secondary-fixed-dim: #e9c176;
+
+  --spacing-margin-mobile: 16px;
+  --spacing-gutter: 24px;
+  --spacing-margin-desktop: 64px;
+  --spacing-max-width: 1280px;
+  --spacing-unit: 8px;
+
+  --text-display-lg: 64px;
+  --text-display-lg-mobile: 40px;
+  --text-headline-lg: 32px;
+  --text-headline-md: 24px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-label-md: 14px;
+  --text-label-sm: 12px;
+  --text-caption: 12px;
+
+  --font-body-md: "Zilla Slab", serif;
+  --font-display-lg-mobile: "Zilla Slab", serif;
+  --font-caption: "Zilla Slab", serif;
+  --font-label-md: "Zilla Slab", serif;
+  --font-label-sm: "Zilla Slab", serif;
+  --font-body-lg: "Zilla Slab", serif;
+  --font-headline-lg: "Zilla Slab", serif;
+  --font-display-lg: "Zilla Slab", serif;
+  --font-headline-md: "Zilla Slab", serif;
+
+  --font-family-zilla: "Zilla Slab", serif;
+  
+  --animate-fade-in-up: fade-in-up 0.5s ease-out;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom styles for masonry and safety scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: 'Zilla Slab', serif;
+  background-color: #fbf9f8;
+  color: #1b1c1c;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Safe areas for iPhone home indicator */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+.masonry-grid {
+  column-count: 2;
+  column-gap: 16px;
+}
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 3;
+    column-gap: 24px;
+  }
+}
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .masonry-item {
+    margin-bottom: 24px;
+  }
+}
+
+.editorial-shadow {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+}
+
+.sepia-filter {
+  filter: sepia(0.6) contrast(1.1) brightness(0.9);
+}
+
+.glass-card {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(60px) saturate(180%);
+  -webkit-backdrop-filter: blur(60px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.refraction-bg {
+  background: radial-gradient(circle at 20% 30%, rgba(254, 212, 136, 0.15) 0%, transparent 40%),
+              radial-gradient(circle at 80% 70%, rgba(119, 90, 25, 0.1) 0%, transparent 40%);
+}
+
+.nav-item-hover {
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-item-hover:hover {
+  letter-spacing: 0.1em;
+  color: var(--color-secondary) !important;
+  transform: translateX(8px);
+}
+
+.close-button-ring {
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.close-button-ring:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.page-subtitle {
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+
+.page-title {
+  font-size: 40px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  font-weight: 700 !important;
+}
+
