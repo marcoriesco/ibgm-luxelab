@@ -4,14 +4,32 @@ import agendaData from '../data/agenda.json';
 export default function Agenda() {
   const days = Object.keys(agendaData);
 
+  const getImageUrl = (url) => {
+    if (!url) return '';
+    if (url.startsWith('http://') || url.startsWith('https://')) {
+      return url;
+    }
+    const cleanUrl = url.startsWith('/') ? url.slice(1) : url;
+    return `${import.meta.env.BASE_URL || '/'}${cleanUrl}`;
+  };
+
   // Default expanded states matching the design:
   // Dia 1, dinner expanded. Dia 2, Almoço, Curso, and Sunday Riley expanded.
   const [expandedEvents, setExpandedEvents] = useState({
-    'DIA 1-0': true,
-    'DIA 2-1': true,
-    'DIA 2-3': true,
-    'DIA 2-4': true,
-    'DIA 6-0': true // Dia 6 tour starts expanded
+    'DIA 1-0': true,  // Jantar de boas-vindas
+    'DIA 2-1': true,  // Almoço Exclusivo & Networking
+    'DIA 2-3': true,  // Curso em Sala de Aula
+    'DIA 2-4': true,  // Ação da Sunday Riley
+    'DIA 3-0': true,  // Masterclass - Boucheron
+    'DIA 4-0': true,  // Masterclass - Mad Lords
+    'DIA 4-2': true,  // Masterclass - Vever
+    'DIA 5-0': true,  // Masterclass - Tiffany & Co.
+    'DIA 5-2': true,  // Galerie Dior
+    'DIA 5-3': true,  // Dolce & Gabanna
+    'DIA 6-1': true,  // Café/Masterclass Consumo
+    'DIA 6-2': true,  // Masterclass Convidado Especial
+    'DIA 6-4': true,  // Transfer
+    'DIA 7-0': true   // Tour Champagne
   });
 
   const toggleEvent = (dayKey, eventIndex) => {
@@ -25,10 +43,11 @@ export default function Agenda() {
   const dayLabels = {
     'DIA 1': 'DIA 1 – 28/06 DOMINGO',
     'DIA 2': 'DIA 2 – 29/06 SEGUNDA-FEIRA',
-    'DIA 3': 'DIA 3 – 01/07 QUARTA-FEIRA',
-    'DIA 4': 'DIA 4 – 02/07 QUINTA-FEIRA',
-    'DIA 5': 'DIA 5 – 03/07 SEXTA-FEIRA',
-    'DIA 6': 'DIA 6 – 04/07 SÁBADO'
+    'DIA 3': 'DIA 3 – 30/06 TERÇA-FEIRA',
+    'DIA 4': 'DIA 4 – 01/07 QUARTA-FEIRA',
+    'DIA 5': 'DIA 5 – 02/07 QUINTA-FEIRA',
+    'DIA 6': 'DIA 6 – 03/07 SEXTA-FEIRA',
+    'DIA 7': 'DIA 7 – 04/07 SÁBADO'
   };
 
   return (
@@ -36,7 +55,7 @@ export default function Agenda() {
       {/* Header */}
       <div className="mb-10 text-center md:text-left">
         <h2 className="page-title text-on-surface">
-          Sua Programação
+          Programação
         </h2>
       </div>
 
@@ -100,13 +119,29 @@ export default function Agenda() {
                         {/* Event Image */}
                         {event.imgUrl && (
                           <div className="mb-4 overflow-hidden rounded-lg">
-                            <img 
-                              alt={event.title} 
-                              className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-[1.02]" 
-                              src={event.imgUrl}
-                              style={{ filter: 'sepia(0.3) contrast(1.1) brightness(0.9)' }}
-                              onClick={(e) => e.stopPropagation()} // Prevent clicking image from collapsing card
-                            />
+                            {event.mapLink ? (
+                              <a 
+                                href={event.mapLink} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                onClick={(e) => e.stopPropagation()} // Prevent clicking image from collapsing card
+                              >
+                                <img 
+                                  alt={event.title} 
+                                  className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-[1.02]" 
+                                  src={getImageUrl(event.imgUrl)}
+                                  style={{ filter: 'sepia(0.3) contrast(1.1) brightness(0.9)' }}
+                                />
+                              </a>
+                            ) : (
+                              <img 
+                                alt={event.title} 
+                                className="w-full h-auto object-cover rounded-lg transition-transform duration-500 hover:scale-[1.02]" 
+                                src={getImageUrl(event.imgUrl)}
+                                style={{ filter: 'sepia(0.3) contrast(1.1) brightness(0.9)' }}
+                                onClick={(e) => e.stopPropagation()} // Prevent clicking image from collapsing card
+                              />
+                            )}
                           </div>
                         )}
 
@@ -114,14 +149,31 @@ export default function Agenda() {
                         {hasLocation && (
                           <>
                             <div className="h-px bg-surface-variant w-full my-4"></div>
-                            <div className="flex items-center gap-2 mb-4">
-                              <span className="material-symbols-outlined text-[18px] text-on-surface-variant">
-                                location_on
-                              </span>
-                              <span className="font-serif text-xs text-on-surface-variant">
-                                {event.metadata[0]}
-                              </span>
-                            </div>
+                            {event.mapLink ? (
+                              <a 
+                                href={event.mapLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 mb-4 hover:text-secondary group/loc text-on-surface-variant transition-colors"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                <span className="material-symbols-outlined text-[18px] text-on-surface-variant group-hover/loc:text-secondary transition-colors">
+                                  location_on
+                                </span>
+                                <span className="font-serif text-xs underline decoration-dotted decoration-outline-variant group-hover/loc:decoration-secondary">
+                                  {event.metadata[0]}
+                                </span>
+                              </a>
+                            ) : (
+                              <div className="flex items-center gap-2 mb-4">
+                                <span className="material-symbols-outlined text-[18px] text-on-surface-variant">
+                                  location_on
+                                </span>
+                                <span className="font-serif text-xs text-on-surface-variant">
+                                  {event.metadata[0]}
+                                </span>
+                              </div>
+                            )}
                           </>
                         )}
 

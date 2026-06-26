@@ -7,7 +7,8 @@
       "metadata": [
         "Port de la Bourdonnais"
       ],
-      "imgUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAbLz7SfKN5QoXM-BTBUY5qMiMw-NsCb9AEk_uHZROJN3yckINaZbQzlzOulhhX691DS7MqV9ycwCYBG-bCpR2bL4pfKYNMTtrIl7OsYIXpTzYZIeu1N8PsB9QDedZ1BfIhOHa_ld5WD3HE1ZRwX99WUaA4ei6OzL-jxjc1fAxL4Qe6kybb1lCcLDSNvnDNWVQP0rYF_covKUeZYe8goAWLJa8EQ_TRRs06Ufd_Mhn7rGXXusU8phclE_D__tYvKlGHSvpj4xOwErs"
+      "imgUrl": "/assets/dia_1_20h30.jpg",
+      "mapLink": "https://maps.app.goo.gl/Pwsm2U2zA3swmVNEA"
     }
   ],
   "DIA 2": [
@@ -17,13 +18,17 @@
       "description": "",
       "metadata": [
         "58 Avenue Grand Armée 75017"
-      ]
+      ],
+      "mapLink": "https://maps.app.goo.gl/UUYeRTHg8Yw8dUxH7"
     },
     {
       "time": "13h - 14h30",
       "title": "Almoço Exclusivo & Networking",
       "description": "",
-      "metadata": []
+      "metadata": [
+        "Ver localização"
+      ],
+      "mapLink": "https://maps.app.goo.gl/rUgyyRUQ3uky7cAV6"
     },
     {
       "time": "14h30",
@@ -35,7 +40,10 @@
       "time": "15h - 17h",
       "title": "Curso em Sala de Aula - Revistas e Moodboard",
       "description": "",
-      "metadata": []
+      "metadata": [
+        "58 Avenue Grand Armée 75017"
+      ],
+      "mapLink": "https://maps.app.goo.gl/UUYeRTHg8Yw8dUxH7"
     },
     {
       "time": "17h15",
@@ -44,7 +52,7 @@
       "metadata": [
         "Galeries Lafayette - Champs Elysees"
       ],
-      "imgUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD6yTf-C9Cd0F0GhZlgu71m629x76jVkUL7w-zHClMi-KREjlz_OYve1knTiO6t75EH2nNxCFFpKb6n2TtWS8wIyONBun7y7sK_HTutIVxfX3tLWcStgQLXkzXc_RhWRVIf9MoA73iq6GIResuB6OQ7BXhxRzIG9Icq6i-YWpxYmwsj5smtHTnfrlxL3M6fsb1Qsug6-NXysKD0FBvv3c7uLQPgNv5qdlTFKyK5inmmpDX6MGkojG10utVywI8SNOH-nwdosRPptCQ"
+      "imgUrl": "/assets/dia_1_17h15_2.jpg"
     },
     {
       "time": "18h",
@@ -52,17 +60,47 @@
       "description": "Visita técnica exclusiva para conhecer os processos e a cultura organizacional de uma das referências em gestão de luxo na capital francesa.",
       "metadata": [
         "23 Avenue des Champs-Élysées"
-      ]
+      ],
+      "mapLink": "https://maps.app.goo.gl/WAETg2FVKzP2VJGn8"
     }
   ],
   "DIA 3": [
+    {
+      "time": "11h",
+      "title": "Masterclass - Boucheron",
+      "description": "Imersão presencial focada na intersecção entre arte e mercado de luxo. Curadoria especial comentada pelos galeristas parceiros.",
+      "metadata": [
+        "26 Place Vendôme 75001"
+      ],
+      "imgUrl": "/assets/dia_2_11h_2.jpg"
+    },
+    {
+      "time": "13h30",
+      "title": "Almoço - Printemps",
+      "description": "Bleu Coupole",
+      "metadata": [
+        "56 Bd Haussmann, 75009 Paris"
+      ]
+    },
+    {
+      "time": "15h - 17h",
+      "title": "Masterclass - Joalheria Printemps",
+      "description": "Apresentação Histórica de uma Marca de Joias Sala Rotonde Presidence. Visita Guiada Histórica e Apresentação ao andar dedicado à joalheria.",
+      "metadata": [
+        "56 Bd Haussmann, 75009 Paris"
+      ],
+      "imgUrl": "/assets/dia_2_15h_2.jpg"
+    }
+  ],
+  "DIA 4": [
     {
       "time": "9h30",
       "title": "Masterclass - Mad Lords",
       "description": "",
       "metadata": [
         "316 Rue Saint-Honoré 75001"
-      ]
+      ],
+      "imgUrl": "/assets/dia_4_9h30.jpg"
     },
     {
       "time": "13h",
@@ -76,7 +114,8 @@
       "description": "",
       "metadata": [
         "9 Rue de La Paix 75002"
-      ]
+      ],
+      "imgUrl": "/assets/dia_3_15h-17h.jpg"
     },
     {
       "time": "17h",
@@ -84,17 +123,19 @@
       "description": "",
       "metadata": [
         "9 Rue de La Monnaie, 75001 Paris"
-      ]
+      ],
+      "imgUrl": "/assets/dia_3_17h_3.jpg"
     }
   ],
-  "DIA 4": [
+  "DIA 5": [
     {
       "time": "11h",
       "title": "Masterclass - Tiffany & Co.",
       "description": "",
       "metadata": [
         "62 Av. Des Champs Elysées 75008"
-      ]
+      ],
+      "imgUrl": "/assets/dia_5_11h.webp"
     },
     {
       "time": "13h",
@@ -108,7 +149,8 @@
       "description": "",
       "metadata": [
         "11 Rue François Ier 75008"
-      ]
+      ],
+      "imgUrl": "/assets/dia_5_15h-16h30.webp"
     },
     {
       "time": "16h30",
@@ -116,7 +158,8 @@
       "description": "",
       "metadata": [
         "54 Avenue Montaigne 75008"
-      ]
+      ],
+      "imgUrl": "/assets/dia_5_16h30.jpg"
     },
     {
       "time": "19h",
@@ -125,10 +168,11 @@
       "metadata": [
         "Palais de Tokyo",
         "13 Av. Du Président Wilson 75116"
-      ]
+      ],
+      "imgUrl": "/assets/dia_4_19h_2.jpg"
     }
   ],
-  "DIA 5": [
+  "DIA 6": [
     {
       "time": "9h",
       "title": "Saída La Vallée Vilage",
@@ -168,13 +212,13 @@
       ]
     }
   ],
-  "DIA 6": [
+  "DIA 7": [
     {
       "time": "All Day",
       "title": "Tour à região de Champagne",
-      "description": "Para a programação na região de Champagne, incluindo as visitas à Mercier e à Pommery e o almoço harmonizado, recomendamos produções elegantes e descomplicadas, adequadas a um dia de experiências e degustações em diferentes ambientes.",
+      "description": "Para a programação na região de Champagne, incluindo as visitas à Mercier e à Pommery e o almoço harmonizado, recomendamos produções elegantes e descomplicadas, adequadas a um dia de experiências e degustações em diferentes ambientes.\n\nPeças em linho, algodão, seda e alfaiataria leve são excelentes escolhas para a ocasião. Como a programação inclui deslocamentos e visitas a áreas internas e externas, o conforto deve prevalecer, especialmente na escolha dos calçados. Tênis discretos, mocassins e sapatilhas são as opções mais indicadas.\n\nA região de Champagne combina tradição, história e sofisticação, mas sem formalidades excessivas. A proposta é privilegiar um visual leve, refinado e confortável para aproveitar plenamente o dia.",
       "metadata": [],
-      "imgUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5m_pod3Fzp8B0rWt046-BWY7JgOZv2upn6iH_y_iq0KwtvUj0bSbq2KJ98uvQ0-si08W-Y8i-npyaMj0rlfTnXqb3y1Z4yWFz8OUQ_b69zCkoOs3zpLUTe0kvGqX56OgUea3AYKGFv1KESLt0CxDNA7T3GrGuoAdSW20TPg-DVFb7cgTBcaQeSB30DdXgJGJ6iVU9Atjv8NvwhdmcU5x7oDj-muWTnth9AwimI0fi9Qwt_fhCPndG-6c9ukACJi9c_oYZj5m1Xs4"
+      "imgUrl": "/assets/dia_6_2.jpg"
     }
   ]
 }

@@ -142,7 +142,7 @@ export default function Home({ setActiveTab }) {
           </div>
 
           {/* Card 3: Informações Práticas */}
-          <div 
+          {/* <div 
             onClick={() => setActiveTab('practicalInfo')}
             className="bg-surface-container-low rounded-lg p-5 flex flex-col justify-between h-48 border border-outline-variant transition-all duration-300 hover:bg-surface-container-high cursor-pointer active:scale-[0.98]"
           >
@@ -157,7 +157,7 @@ export default function Home({ setActiveTab }) {
             <p className="font-body-md text-xs text-on-surface-variant leading-snug">
               Voltagem, adaptador de tomada, dresscode, aplicativos úteis e segurança.
             </p>
-          </div>
+          </div> */}
 
           {/* Card 4: Contatos Úteis */}
           <div 

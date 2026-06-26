@@ -27,7 +27,6 @@ export default function Menu({ isOpen, onClose, activeTab, setActiveTab }) {
     { id: 'dicas', label: 'Dicas' },
     { id: 'galeria', label: 'Galeria' },
     { id: 'complementaryContent', label: 'Conteúdo Complementar' },
-    { id: 'practicalInfo', label: 'Informações Práticas' },
     { id: 'contatos', label: 'Contatos Úteis' }
   ];
 
