@@ -42,7 +42,10 @@ export default function Menu({ isOpen, onClose, activeTab, setActiveTab }) {
     >
       {/* Top App Bar within Overlay */}
       <header className="w-full h-16 flex justify-between items-center px-4">
-        <div className="flex items-center gap-2">
+        <div 
+          onClick={() => handleItemClick('home')}
+          className="flex items-center gap-2 cursor-pointer active:opacity-80 transition-opacity"
+        >
           <span className="text-lg font-bold text-primary uppercase tracking-widest">
             Luxe Lab
           </span>

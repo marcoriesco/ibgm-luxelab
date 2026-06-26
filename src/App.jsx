@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-on-surface">
       {/* Top Application Bar */}
-      <Header onMenuClick={handleMenuClick} />
+      <Header onMenuClick={handleMenuClick} onLogoClick={() => setActiveTab('home')} />
 
       {/* Main Content Area */}
       <main className="flex-grow w-full max-w-md md:max-w-4xl mx-auto relative px-4 md:px-8">

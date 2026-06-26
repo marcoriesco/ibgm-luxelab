@@ -14,23 +14,35 @@ export default function ComplementaryContent() {
     }));
   };
 
+  const getImageUrl = (url) => {
+    if (!url) return '';
+    if (url.startsWith('http://') || url.startsWith('https://')) {
+      return url;
+    }
+    const cleanUrl = url.startsWith('/') ? url.slice(1) : url;
+    return `${import.meta.env.BASE_URL || '/'}${cleanUrl}`;
+  };
+
   const articles = [
     {
       title: "The Luxury Strategy",
       subtitle: "Break the rules of marketing to build luxury brands",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCLA5GIVRGjw49g7J68PLkqTrLOGFxgPUVo1EHxMxdHxBeffzqGGMd9_GjgAoP-YNDLwj-AkJ7JZ5HXvSOrkj6KbvbUkc56vZ6Wd3HuhSzCJTrmZKvUsqZggpwxZAqKoC02qfY5SriPfS_aEHAvBVV48DgzzflT7KKToujKhXgUzx08BYLT8QOmwo0XhYlqf5eI7MbnFpRKo0zkflCANWj7fuSvuUToYDo7NrqeN4mgD--TL5VT12Hhq7tRnWinh3t6FojNpAyPECc",
+      imageUrl: "/assets/theluxurystrategy.jpg",
+      amazonUrl: "https://www.amazon.com.br/Luxury-Strategy-Break-Marketing-Brands/dp/1398624268/ref=asc_df_1398624268?mcid=8a1c5df6fec03ee191453272afacdcb6&tag=googleshopp00-20&linkCode=df0&hvadid=709877915946&hvpos=&hvnetw=g&hvrand=13502785926240947438&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9196327&hvtargid=pla-2395686063733&psc=1&hvocijid=13502785926240947438-1398624268-&hvexpln=0&language=pt_BR",
       content: "O valor de uma joia não está apenas nas suas matérias-primas. Esse conceito é particularmente importante para as joalherias que desejam migrar de uma estratégia baseada em produto para uma estratégia baseada em marca, ampliando sua diferenciação no mercado e criando condições para alcançar margens mais elevadas.\n\nÉ justamente essa visão que torna The Luxury Strategy uma das obras mais relevantes para empresários do setor. Considerado um dos livros mais importantes do mercado de luxo, ele demonstra que luxo não é uma categoria de produto, mas um modelo específico de criação de valor e gestão de marca. Para quem atua nos segmentos de joias, relógios e outros artigos ou bens de alto padrão, a leitura oferece uma compreensão mais profunda sobre como construir desejo, exclusividade e valor percebido — pilares essenciais para o fortalecimento de marcas de luxo."
     },
     {
       title: "O Luxo Eterno",
       subtitle: "Da Idade do Sagrado ao Tempo das Marcas",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBkxYbokeGw7ZyxdOj6uHT9ompZzBpFOO9r7c_4owX91X7wGAc5in8_5lX95zIy-HzH-OFNsrFitU8cNQ4lHV0W_6lnLVo4qgVQ9ymlHXzLN6KrLUePeSdE6DXbC4_-bqqcMoHCBIc-70z5GIODlvnrpB4PEZsxymosgAKiykq2A_8ug1QIMDnPzUQA1zKhHBHIvDAVSQ-Qx_QwwNbfFFwbYDgm2UYb6kTswkC31pZiWqJcZd5Ss_NkKgC6YEIaeRNzlPrGzXphVA0",
+      imageUrl: "/assets/oluxoeterno.jpg",
+      amazonUrl: "https://www.amazon.com.br/luxo-eterno-idade-sagrado-marcas/dp/9724417018",
       content: "O luxo atravessa séculos porque responde a necessidades humanas que vão além da utilidade dos produtos. Desde os símbolos de poder e prestígio das antigas civilizações até as grandes marcas contemporâneas, o luxo sempre esteve associado ao desejo, à distinção e à construção de significado. Compreender essa trajetória é fundamental para empresários que buscam fortalecer o posicionamento de suas marcas em um mercado cada vez mais competitivo.\n\nÉ justamente essa perspectiva que faz de O Luxo Eterno – Da Idade do Sagrado ao Tempo das Marcas, de Gilles Lipovetsky, uma leitura atual e relevante. A obra mostra que, embora os códigos do luxo tenham evoluído ao longo do tempo, seus fundamentos permanecem os mesmos: exclusividade, valor simbólico, experiência e desejo. Para quem atua nos segmentos de joias, relógios, moda, hotelaria de alto padrão ou bens exclusivos, o livro oferece uma compreensão aprofundada sobre o papel cultural e emocional do luxo, contribuindo para a construção de marcas mais fortes, desejadas e alinhadas às expectativas do consumidor contemporâneo."
     },
     {
       title: "French Jewelry of the Nineteenth Century",
       subtitle: "Henri Vever",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuAwpcC1RgyYuhfww_NmTQ5-6EZrS-t0ug8cf0sgplOfjL59bQ-80LnSeSqNAJ-ebp6K9IixGh2KUZiHNK5SMnj0BlkKpgqn1NZI0MDr0JZ8iMI0_QjKaP4tyB6Ca6gTFn0JPgr97ZIevDtw7dM5QAbvIekTEbkF1aFmPSFHWFLOlvYvzVvhrGAKM3veMK9jF9XvwNXgJ0quNyypBmr3STQ2bLkCy0eIstiDr080s5hANI7O0g3Xeq9gngl2ip-WMD35UA1vuyo8RLc",
+      imageUrl: "/assets/FrenchJewelryoftheNineteenthCentury.jpg",
+      amazonUrl: "https://www.amazon.com.br/French-Jewelry-Nineteenth-Century-Henri/dp/0500237840",
       content: "A joalheria de excelência é resultado não apenas de técnica e materiais nobres, mas também de referências estéticas, movimentos artísticos e transformações culturais que moldaram o setor ao longo do tempo. Conhecer essa evolução permite compreender a origem de muitos conceitos que ainda influenciam o design, a inovação e a percepção de valor na joalheria contemporânea.\n\nÉ essa riqueza histórica que faz de French Jewelry of the Nineteenth Century, de Henri Vever, uma obra indispensável para profissionais e empresários do segmento. Considerada a principal referência sobre a joalheria francesa do século XIX, a publicação documenta a evolução do setor desde o período napoleônico até a Art Nouveau, movimento do qual o próprio Vever foi um dos grandes defensores. Ao explorar temas como o uso inovador do esmalte, a inspiração em elementos da natureza e a influência da estética japonesa, o livro oferece uma visão aprofundada sobre a construção da joalheria moderna e sobre os fundamentos criativos que continuam inspirando marcas e designers até os dias atuais."
     }
   ];
@@ -55,7 +67,7 @@ export default function ComplementaryContent() {
                 <img 
                   alt={article.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  src={article.imageUrl}
+                  src={getImageUrl(article.imageUrl)}
                   style={{ filter: 'sepia(0.3) contrast(1.1) brightness(0.9)' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
@@ -98,6 +110,21 @@ export default function ComplementaryContent() {
                   </p>
                   <div className="font-serif text-xs text-on-surface-variant space-y-4 leading-relaxed whitespace-pre-line">
                     {article.content}
+                  </div>
+                  
+                  {/* Share button linking to Amazon */}
+                  <div className="mt-6 flex justify-between items-center border-t border-outline-variant/30 pt-4">
+                    <div></div>
+                    <a 
+                      href={article.amazonUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      title="Ver na Amazon"
+                      className="text-outline hover:text-primary active:scale-95 transition-all p-1 flex items-center justify-center cursor-pointer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <span className="material-symbols-outlined text-[20px]">share</span>
+                    </a>
                   </div>
                 </div>
               </div>

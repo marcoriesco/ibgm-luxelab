@@ -49,7 +49,8 @@ export default function Galeria() {
             Galeria
           </h1>
           <p className="text-sm md:text-base font-serif text-on-surface-variant leading-relaxed">
-            Uma coleção curada de momentos do Luxe Lab Paris. Explore a moda, a arquitetura e a gastronomia que definem nossa experiência exclusiva na Cidade Luz.
+            Reviva os principais momentos do Luxe Lab Paris 2026.<br/>
+            Explore os registros fotográficos e audiovisuais da imersão, organizados por dia de programação, e faça o download dos arquivos que desejar.          
           </p>
         </div>
         <a 

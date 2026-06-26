@@ -41,7 +41,7 @@ export default function Home({ setActiveTab }) {
               <span className="material-symbols-outlined text-secondary-fixed">calendar_today</span>
               <p className="font-label-md text-label-md">28/06</p>
               <span className="material-symbols-outlined text-secondary-fixed ml-2">schedule</span>
-              <p className="font-label-md text-label-md">20:30</p>
+              <p className="font-label-md text-label-md">20h</p>
             </div>
             <div className="flex items-center gap-3">
               <span className="material-symbols-outlined text-secondary-fixed">location_on</span>

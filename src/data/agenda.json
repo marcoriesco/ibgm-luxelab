@@ -1,12 +1,10 @@
 {
   "DIA 1": [
     {
-      "time": "20h30",
+      "time": "20h",
       "title": "Jantar de boas-vindas",
-      "description": "Bateaux gastronômico no pôr do sol.\n\nO passeio acontece ocorrerá no início da noite parisiense, ainda com luz natural nesta época do ano. Sugere-se um traje casual elegante (smart casual), com peças de alfaiataria leve, vestidos, camisas, blazers leves ou conjuntos coordenados.\n\nNão há necessidade de traje formal, salto alto ou gravata. Recomenda-se priorizar o conforto, optando por calçados elegantes e práticos. Para as mulheres, sugere-se sapatos baixos ou salto bloco, evitando salto fino, que pode não ser a opção mais adequada para os deslocamentos e para o embarque e desembarque no barco.",
-      "metadata": [
-        "Port de la Bourdonnais"
-      ],
+      "description": "Uma experiência a bordo do Bateaux Parisiens, ainda com luz natural nesta época do ano, com jantar durante o passeio pelo Rio Sena.\n\nO Bateaux Parisiens adota um padrão elegante de vestimenta e recomenda o seguinte dress code:\n\nHomens\nSmart Elegant: peças de alfaiataria leve, blazer com calça social e camisa. Sapato social, loafer ou similares. Evitar tênis esportivos, bermudas ou jeans com rasgos.\n\nMulheres\nChic & Raffiné: vestido midi ou longo, macacão elegante, peças coordenadas, conjunto de calça ou saia com blusa sofisticada. Sandália, scarpin ou mule refinada. Um xale leve pode ser útil para a brisa do Sena.\n\nNão é permitido a bordo:\nShorts, trajes de praia (incluindo rasteiras), chinelos ou havaianas. O Bateaux Parisiens reserva-se o direito de negar o embarque a convidados que não estejam adequadamente vestidos. Bolsas grandes e bagagens com capacidade superior a 16 litros também não são permitidas a bordo — leve apenas o essencial.",
+      "metadata": ["Port de la Bourdonnais"],
       "imgUrl": "/assets/dia_1_20h30.jpg",
       "mapLink": "https://maps.app.goo.gl/Pwsm2U2zA3swmVNEA"
     }
@@ -16,18 +14,15 @@
       "time": "9h - 13h",
       "title": "Masterclass - O Mercado de Luxo na Joalheria",
       "description": "",
-      "metadata": [
-        "58 Avenue Grand Armée 75017"
-      ],
+      "metadata": ["58 Avenue Grand Armée 75017"],
       "mapLink": "https://maps.app.goo.gl/UUYeRTHg8Yw8dUxH7"
     },
     {
       "time": "13h - 14h30",
-      "title": "Almoço Exclusivo & Networking",
+      "title": "Almoço no Le Touring",
       "description": "",
-      "metadata": [
-        "Ver localização"
-      ],
+      "metadata": ["Ver localização"],
+      "imgUrl": "/assets/dia_2_13h.jpg",
       "mapLink": "https://maps.app.goo.gl/rUgyyRUQ3uky7cAV6"
     },
     {
@@ -40,27 +35,21 @@
       "time": "15h - 17h",
       "title": "Curso em Sala de Aula - Revistas e Moodboard",
       "description": "",
-      "metadata": [
-        "58 Avenue Grand Armée 75017"
-      ],
+      "metadata": ["58 Avenue Grand Armée 75017"],
       "mapLink": "https://maps.app.goo.gl/UUYeRTHg8Yw8dUxH7"
     },
     {
       "time": "17h15",
       "title": "Ação da Sunday Riley",
       "description": "Experiência exclusiva de marca com a Sunday Riley, explorando as tendências de skincare e beleza no mercado de luxo parisiense.",
-      "metadata": [
-        "Galeries Lafayette - Champs Elysees"
-      ],
+      "metadata": ["Galeries Lafayette - Champs Elysees"],
       "imgUrl": "/assets/dia_1_17h15_2.jpg"
     },
     {
       "time": "18h",
       "title": "Visita ao RH Paris",
-      "description": "Visita técnica exclusiva para conhecer os processos e a cultura organizacional de uma das referências em gestão de luxo na capital francesa.",
-      "metadata": [
-        "23 Avenue des Champs-Élysées"
-      ],
+      "description": "Visita não monitorada ao RH Paris, um dos mais relevantes cases internacionais de transformação de varejo, demonstrando como o alinhamento entre posicionamento de marca, experiência do cliente, design e ambientação pode elevar uma empresa ao segmento de luxo e gerar diferenciação competitiva.",
+      "metadata": ["23 Avenue des Champs-Élysées"],
       "mapLink": "https://maps.app.goo.gl/WAETg2FVKzP2VJGn8"
     }
   ],
@@ -69,26 +58,20 @@
       "time": "11h",
       "title": "Masterclass - Boucheron",
       "description": "Imersão presencial focada na intersecção entre arte e mercado de luxo. Curadoria especial comentada pelos galeristas parceiros.",
-      "metadata": [
-        "26 Place Vendôme 75001"
-      ],
+      "metadata": ["26 Place Vendôme 75001"],
       "imgUrl": "/assets/dia_2_11h_2.jpg"
     },
     {
       "time": "13h30",
       "title": "Almoço - Printemps",
       "description": "Bleu Coupole",
-      "metadata": [
-        "56 Bd Haussmann, 75009 Paris"
-      ]
+      "metadata": ["56 Bd Haussmann, 75009 Paris"]
     },
     {
       "time": "15h - 17h",
       "title": "Masterclass - Joalheria Printemps",
       "description": "Apresentação Histórica de uma Marca de Joias Sala Rotonde Presidence. Visita Guiada Histórica e Apresentação ao andar dedicado à joalheria.",
-      "metadata": [
-        "56 Bd Haussmann, 75009 Paris"
-      ],
+      "metadata": ["56 Bd Haussmann, 75009 Paris"],
       "imgUrl": "/assets/dia_2_15h_2.jpg"
     }
   ],
@@ -97,9 +80,7 @@
       "time": "9h30",
       "title": "Masterclass - Mad Lords",
       "description": "",
-      "metadata": [
-        "316 Rue Saint-Honoré 75001"
-      ],
+      "metadata": ["316 Rue Saint-Honoré 75001"],
       "imgUrl": "/assets/dia_4_9h30.jpg"
     },
     {
@@ -112,18 +93,14 @@
       "time": "15h - 17h",
       "title": "Masterclass - Vever",
       "description": "",
-      "metadata": [
-        "9 Rue de La Paix 75002"
-      ],
+      "metadata": ["9 Rue de La Paix 75002"],
       "imgUrl": "/assets/dia_3_15h-17h.jpg"
     },
     {
       "time": "17h",
       "title": "Visita Samaritaine",
       "description": "",
-      "metadata": [
-        "9 Rue de La Monnaie, 75001 Paris"
-      ],
+      "metadata": ["9 Rue de La Monnaie, 75001 Paris"],
       "imgUrl": "/assets/dia_3_17h_3.jpg"
     }
   ],
@@ -132,9 +109,7 @@
       "time": "11h",
       "title": "Masterclass - Tiffany & Co.",
       "description": "",
-      "metadata": [
-        "62 Av. Des Champs Elysées 75008"
-      ],
+      "metadata": ["62 Av. Des Champs Elysées 75008"],
       "imgUrl": "/assets/dia_5_11h.webp"
     },
     {
@@ -147,28 +122,21 @@
       "time": "15h - 16h30",
       "title": "Galerie Dior",
       "description": "",
-      "metadata": [
-        "11 Rue François Ier 75008"
-      ],
+      "metadata": ["11 Rue François Ier 75008"],
       "imgUrl": "/assets/dia_5_15h-16h30.webp"
     },
     {
       "time": "16h30",
       "title": "Haute Joaillerie Dolce & Gabanna",
       "description": "",
-      "metadata": [
-        "54 Avenue Montaigne 75008"
-      ],
+      "metadata": ["54 Avenue Montaigne 75008"],
       "imgUrl": "/assets/dia_5_16h30.jpg"
     },
     {
       "time": "19h",
       "title": "Exposição Pomelatto",
       "description": "",
-      "metadata": [
-        "Palais de Tokyo",
-        "13 Av. Du Président Wilson 75116"
-      ],
+      "metadata": ["Palais de Tokyo", "13 Av. Du Président Wilson 75116"],
       "imgUrl": "/assets/dia_4_19h_2.jpg"
     }
   ],
@@ -177,9 +145,7 @@
       "time": "9h",
       "title": "Saída La Vallée Vilage",
       "description": "",
-      "metadata": [
-        "58 Avenue Grand Armée 75017"
-      ]
+      "metadata": ["58 Avenue Grand Armée 75017"]
     },
     {
       "time": "10h",
@@ -191,25 +157,19 @@
       "time": "11h",
       "title": "Masterclass com Convidado Especial",
       "description": "",
-      "metadata": [
-        "11 Rue François Ier 75008"
-      ]
+      "metadata": ["11 Rue François Ier 75008"]
     },
     {
       "time": "13h",
       "title": "Almoço",
       "description": "",
-      "metadata": [
-        "54 Avenue Montaigne 75008"
-      ]
+      "metadata": ["54 Avenue Montaigne 75008"]
     },
     {
       "time": "17h",
       "title": "Transfer",
       "description": "",
-      "metadata": [
-        "58 Avenue Grande Armée 75017"
-      ]
+      "metadata": ["58 Avenue Grande Armée 75017"]
     }
   ],
   "DIA 7": [
