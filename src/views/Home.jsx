@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImageUrl } from '../utils/assets';
 
 export default function Home({ setActiveTab }) {
   const curatedItems = [
@@ -19,7 +20,7 @@ export default function Home({ setActiveTab }) {
   return (
     <div className="w-full bg-surface min-h-screen">
       {/* Hero Section: Próximo Compromisso */}
-      <section className="relative overflow-hidden h-[500px] -mx-4 md:-mx-8" style={{ width: 'calc(100% + 2rem)' }}>
+      {/* <section className="relative overflow-hidden h-[500px] -mx-4 md:-mx-8" style={{ width: 'calc(100% + 2rem)' }}>
         <div className="absolute inset-0 w-full h-full">
           <img 
             alt="Tour Eiffel" 
@@ -49,10 +50,10 @@ export default function Home({ setActiveTab }) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Sua Programação Card */}
-      <section className="py-10">
+      <section className="py-4">
         <div 
           onClick={() => setActiveTab('agenda')}
           className="relative w-full h-96 md:h-[400px] rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 shadow-md active:scale-[0.98]"
@@ -74,7 +75,7 @@ export default function Home({ setActiveTab }) {
       {/* Curadoria Parisiense Carousel */}
       <section className="py-10">
         <div className="mb-6">
-          <h2 className="font-headline-md text-headline-md text-on-background">Curadoria Parisiense</h2>
+          <h2 className="font-headline-md text-headline-md text-on-background">Curadoria Cultural</h2>
         </div>
         <div className="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4 -mx-4 px-4 md:-mx-0 md:px-0 md:grid md:grid-cols-2 md:gap-8">
           {curatedItems.map((item, index) => (
@@ -87,7 +88,7 @@ export default function Home({ setActiveTab }) {
                 <img 
                   alt={item.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  src={item.imgUrl} 
+                  src={getImageUrl(item.imgUrl)} 
                   style={{ filter: 'sepia(0.4) contrast(1.1) brightness(0.9)' }}
                 />
               </div>
@@ -108,17 +109,22 @@ export default function Home({ setActiveTab }) {
           {/* Card 1: Galeria */}
           <div 
             onClick={() => setActiveTab('galeria')}
-            className="bg-surface-container-low rounded-lg p-5 flex flex-col justify-between h-48 border border-outline-variant transition-all duration-300 hover:bg-surface-container-high cursor-pointer active:scale-[0.98]"
+            className="relative overflow-hidden group rounded-lg p-5 flex flex-col justify-between h-48 border border-outline-variant transition-all duration-300 shadow-md cursor-pointer active:scale-[0.98]"
           >
-            <div>
-              <span className="material-symbols-outlined text-secondary mb-3">
+            <div 
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              style={{ backgroundImage: `url("${getImageUrl('/assets/home_galeria.jpg')}")`, filter: 'sepia(0.3) contrast(1.1) brightness(0.7)' }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div className="relative z-10 text-white">
+              <span className="material-symbols-outlined text-white/90 mb-3">
                 photo_library
               </span>
-              <h3 className="font-headline-md text-on-background text-lg leading-tight font-bold">
+              <h3 className="font-headline-md text-white text-lg leading-tight font-bold">
                 Galeria
               </h3>
             </div>
-            <p className="font-body-md text-xs text-on-surface-variant leading-snug">
+            <p className="relative z-10 font-body-md text-xs text-white/90 leading-snug">
               Explore os momentos mais marcantes da nossa jornada parisiense.
             </p>
           </div>
@@ -126,17 +132,22 @@ export default function Home({ setActiveTab }) {
           {/* Card 2: Conteúdo Complementar */}
           <div 
             onClick={() => setActiveTab('complementaryContent')}
-            className="bg-surface-container-low rounded-lg p-5 flex flex-col justify-between h-48 border border-outline-variant transition-all duration-300 hover:bg-surface-container-high cursor-pointer active:scale-[0.98]"
+            className="relative overflow-hidden group rounded-lg p-5 flex flex-col justify-between h-48 border border-outline-variant transition-all duration-300 shadow-md cursor-pointer active:scale-[0.98]"
           >
-            <div>
-              <span className="material-symbols-outlined text-secondary mb-3">
+            <div 
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              style={{ backgroundImage: `url("${getImageUrl('/assets/home_conteudocomplementar.jpg')}")`, filter: 'sepia(0.3) contrast(1.1) brightness(0.7)' }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div className="relative z-10 text-white">
+              <span className="material-symbols-outlined text-white/90 mb-3">
                 menu_book
               </span>
-              <h3 className="font-headline-md text-on-background text-lg leading-tight font-bold">
+              <h3 className="font-headline-md text-white text-lg leading-tight font-bold">
                 Conteúdo Complementar
               </h3>
             </div>
-            <p className="font-body-md text-xs text-on-surface-variant leading-snug">
+            <p className="relative z-10 font-body-md text-xs text-white/90 leading-snug">
               Aprofunde-se nos detalhes que tornam cada experiência no Luxe Lab única.
             </p>
           </div>
@@ -155,36 +166,40 @@ export default function Home({ setActiveTab }) {
               </h3>
             </div>
             <p className="font-body-md text-xs text-on-surface-variant leading-snug">
-              Voltagem, adaptador de tomada, dresscode, aplicativos úteis e segurança.
+              Tudo o que você precisa saber para sua estadia em Paris.
             </p>
           </div> */}
 
           {/* Card 4: Contatos Úteis */}
           <div 
             onClick={() => setActiveTab('contatos')}
-            className="bg-surface-container-low rounded-lg p-5 flex flex-col justify-between h-48 border border-outline-variant transition-all duration-300 hover:bg-surface-container-high cursor-pointer active:scale-[0.98]"
+            className="relative overflow-hidden group rounded-lg p-5 flex flex-col justify-between h-48 border border-outline-variant transition-all duration-300 shadow-md cursor-pointer active:scale-[0.98]"
           >
-            <div>
-              <span className="material-symbols-outlined text-secondary mb-3">
+            <div 
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              style={{ backgroundImage: `url("${getImageUrl('/assets/home_contatosuteis.jpg')}")`, filter: 'sepia(0.3) contrast(1.1) brightness(0.7)' }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div className="relative z-10 text-white">
+              <span className="material-symbols-outlined text-white/90 mb-3">
                 support_agent
               </span>
-              <h3 className="font-headline-md text-on-background text-lg leading-tight font-bold">
+              <h3 className="font-headline-md text-white text-lg leading-tight font-bold">
                 Contatos Úteis
               </h3>
             </div>
-            <p className="font-body-md text-xs text-on-surface-variant leading-snug">
+            <p className="relative z-10 font-body-md text-xs text-white/90 leading-snug">
               Equipe IBGM, Embaixada, Consulado e Polícia.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="pt-12 pb-28 flex flex-col items-center justify-center gap-4 border-t border-outline-variant bg-surface-container-lowest -mx-4 md:-mx-8" style={{ width: 'calc(100% + 2rem)' }}>
         <img 
           alt="IBGM Logo" 
           className="h-8 w-auto object-contain" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8_YDu2DZkqGqmh-Jht-TpPfS3UWfhWtJVfLL0wR3V2NY0KL6Sgt2unnbHMSrhwWknOQH3Z_I2K7qtx1ZHQFPJ7BqU13JjDyb_MlEH7KMFZ3I2fM0B7F6hPvz75_NVRCuB4aeWGT3OHAIsAdzOXBF6yrH2MLYz5g_e5y-L9bLABXtdpG7baJLDj4HjAEVTyAbfCKGZhpZ9oojMiBgE0enVIkQmKfBDtXZYjYQjKOQHTFHTVZf4x8cjnmUql721tP6B0bsR7vMWP9I" 
+          src={getImageUrl("https://lh3.googleusercontent.com/aida-public/AB6AXuD8_YDu2DZkqGqmh-Jht-TpPfS3UWfhWtJVfLL0wR3V2NY0KL6Sgt2unnbHMSrhwWknOQH3Z_I2K7qtx1ZHQFPJ7BqU13JjDyb_MlEH7KMFZ3I2fM0B7F6hPvz75_NVRCuB4aeWGT3OHAIsAdzOXBF6yrH2MLYz5g_e5y-L9bLABXtdpG7baJLDj4HjAEVTyAbfCKGZhpZ9oojMiBgE0enVIkQmKfBDtXZYjYQjKOQHTFHTVZf4x8cjnmUql721tP6B0bsR7vMWP9I")} 
         />
         <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
           Curadoria de Conteúdo

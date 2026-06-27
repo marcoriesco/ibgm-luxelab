@@ -24,7 +24,7 @@ export default function Menu({ isOpen, onClose, activeTab, setActiveTab }) {
   const menuItems = [
     { id: 'home', label: 'Home' },
     { id: 'agenda', label: 'Agenda' },
-    { id: 'dicas', label: 'Dicas' },
+    { id: 'dicas', label: 'Cultural' },
     { id: 'galeria', label: 'Galeria' },
     { id: 'complementaryContent', label: 'Conteúdo Complementar' },
     { id: 'contatos', label: 'Contatos Úteis' }

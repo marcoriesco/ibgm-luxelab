@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImageUrl } from '../utils/assets';
 
 export default function Header({ onMenuClick, onLogoClick }) {
   return (
@@ -12,7 +13,7 @@ export default function Header({ onMenuClick, onLogoClick }) {
           <img 
             alt="Luxe Lab Logo" 
             className="h-8 w-auto object-contain" 
-            src="/luxelab/assets/luxe_lab_horizontal.png" 
+            src={getImageUrl("/assets/luxe_lab_horizontal.png")} 
           />
         </div>
         

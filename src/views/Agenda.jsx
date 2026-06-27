@@ -1,35 +1,38 @@
 import React, { useState } from 'react';
 import agendaData from '../data/agenda.json';
+import { getImageUrl } from '../utils/assets';
 
 export default function Agenda() {
   const days = Object.keys(agendaData);
 
-  const getImageUrl = (url) => {
-    if (!url) return '';
-    if (url.startsWith('http://') || url.startsWith('https://')) {
-      return url;
-    }
-    const cleanUrl = url.startsWith('/') ? url.slice(1) : url;
-    return `${import.meta.env.BASE_URL || '/'}${cleanUrl}`;
-  };
-
   // Default expanded states matching the design:
   // Dia 1, dinner expanded. Dia 2, Almoço, Curso, and Sunday Riley expanded.
   const [expandedEvents, setExpandedEvents] = useState({
-    'DIA 1-0': true,  // Jantar de boas-vindas
-    'DIA 2-1': true,  // Almoço Exclusivo & Networking
-    'DIA 2-3': true,  // Curso em Sala de Aula
-    'DIA 2-4': true,  // Ação da Sunday Riley
-    'DIA 3-0': true,  // Masterclass - Boucheron
-    'DIA 4-0': true,  // Masterclass - Mad Lords
-    'DIA 4-2': true,  // Masterclass - Vever
-    'DIA 5-0': true,  // Masterclass - Tiffany & Co.
-    'DIA 5-2': true,  // Galerie Dior
-    'DIA 5-3': true,  // Dolce & Gabanna
-    'DIA 6-1': true,  // Café/Masterclass Consumo
-    'DIA 6-2': true,  // Masterclass Convidado Especial
-    'DIA 6-4': true,  // Transfer
-    'DIA 7-0': true   // Tour Champagne
+    'DIA 1-0': false,  // Jantar de boas-vindas
+    'DIA 2-0': false,  // Almoço Exclusivo & Networking
+    'DIA 2-1': false,  // Almoço Exclusivo & Networking
+    'DIA 2-2': false,  // Almoço Exclusivo & Networking
+    'DIA 2-3': false,  // Curso em Sala de Aula
+    'DIA 2-4': false,  // Ação da Sunday Riley
+    'DIA 2-5': false,  // Ação da Sunday Riley
+    'DIA 3-0': false,  // Masterclass - Boucheron
+    'DIA 3-1': false,  // Masterclass - Boucheron
+    'DIA 3-2': false,  // Masterclass - Boucheron
+    'DIA 4-0': false,  // Masterclass - Mad Lords
+    'DIA 4-1': false,  // Masterclass - Mad Lords
+    'DIA 4-2': false,  // Masterclass - Vever
+    'DIA 4-3': false,  // Masterclass - Vever
+    'DIA 5-0': false,  // Masterclass - Tiffany & Co.
+    'DIA 5-1': false,  // Masterclass - Tiffany & Co.
+    'DIA 5-2': false,  // Galerie Dior
+    'DIA 5-3': false,  // Dolce & Gabanna
+    'DIA 5-4': false,  // Dolce & Gabanna
+    'DIA 6-0': false,  // Café/Masterclass Consumo
+    'DIA 6-1': false,  // Café/Masterclass Consumo
+    'DIA 6-2': false,  // Masterclass Convidado Especial
+    'DIA 6-3': false,  // Transfer
+    'DIA 6-4': false,  // Transfer
+    'DIA 7-0': false   // Tour Champagne
   });
 
   const toggleEvent = (dayKey, eventIndex) => {

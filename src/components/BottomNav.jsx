@@ -4,7 +4,7 @@ export default function BottomNav({ activeTab, setActiveTab }) {
   const navItems = [
     { id: 'home', label: 'Home', icon: 'home' },
     { id: 'agenda', label: 'Agenda', icon: 'event_upcoming' },
-    { id: 'dicas', label: 'Dicas', icon: 'auto_awesome' },
+    { id: 'dicas', label: 'Cultural', icon: 'auto_awesome' },
     { id: 'galeria', label: 'Galeria', icon: 'photo_library' }
   ];
 

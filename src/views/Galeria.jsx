@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImageUrl } from '../utils/assets';
 
 export default function Galeria() {
   const galleryItems = [
@@ -79,7 +80,7 @@ export default function Galeria() {
             <img
               alt={item.alt}
               className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
-              src={item.url}
+              src={getImageUrl(item.url)}
               style={{ filter: 'sepia(1)' }}
               loading="lazy"
             />

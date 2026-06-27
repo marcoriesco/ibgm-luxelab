@@ -15,20 +15,22 @@
       "title": "Masterclass - O Mercado de Luxo na Joalheria",
       "description": "",
       "metadata": ["58 Avenue Grand Armée 75017"],
+      "imgUrl": "/assets/dia_2_9h-13h.jpg",
       "mapLink": "https://maps.app.goo.gl/UUYeRTHg8Yw8dUxH7"
     },
     {
       "time": "13h - 14h30",
       "title": "Almoço no Le Touring",
       "description": "",
-      "metadata": ["Ver localização"],
-      "imgUrl": "/assets/dia_2_13h.jpg",
+      "metadata": ["61 Av. de la Grande Armée, 7511"],
+      "imgUrl": "/assets/dia_2_13h-14h30.jpg",
       "mapLink": "https://maps.app.goo.gl/rUgyyRUQ3uky7cAV6"
     },
     {
       "time": "14h30",
       "title": "Foto do Grupo",
       "description": "Registro oficial de todos os participantes do Luxe Lab Paris 2026. Um momento para celebrar a união do grupo e eternizar a experiência.",
+      "imgUrl": "/assets/dia_2_14h30.jpg",
       "metadata": []
     },
     {
@@ -36,6 +38,7 @@
       "title": "Curso em Sala de Aula - Revistas e Moodboard",
       "description": "",
       "metadata": ["58 Avenue Grand Armée 75017"],
+      "imgUrl": "/assets/dia_2_15h-17h.jpg",
       "mapLink": "https://maps.app.goo.gl/UUYeRTHg8Yw8dUxH7"
     },
     {
@@ -43,13 +46,14 @@
       "title": "Ação da Sunday Riley",
       "description": "Experiência exclusiva de marca com a Sunday Riley, explorando as tendências de skincare e beleza no mercado de luxo parisiense.",
       "metadata": ["Galeries Lafayette - Champs Elysees"],
-      "imgUrl": "/assets/dia_1_17h15_2.jpg"
+      "imgUrl": "/assets/dia_2_17h15.jpg"
     },
     {
       "time": "18h",
       "title": "Visita ao RH Paris",
       "description": "Visita não monitorada ao RH Paris, um dos mais relevantes cases internacionais de transformação de varejo, demonstrando como o alinhamento entre posicionamento de marca, experiência do cliente, design e ambientação pode elevar uma empresa ao segmento de luxo e gerar diferenciação competitiva.",
       "metadata": ["23 Avenue des Champs-Élysées"],
+      "imgUrl": "/assets/dia_2_18h.jpg",
       "mapLink": "https://maps.app.goo.gl/WAETg2FVKzP2VJGn8"
     }
   ],
@@ -59,20 +63,24 @@
       "title": "Masterclass - Boucheron",
       "description": "Imersão presencial focada na intersecção entre arte e mercado de luxo. Curadoria especial comentada pelos galeristas parceiros.",
       "metadata": ["26 Place Vendôme 75001"],
-      "imgUrl": "/assets/dia_2_11h_2.jpg"
+      "imgUrl": "/assets/dia_3_11h.jpg",
+      "mapLink": "https://maps.app.goo.gl/Xe6gXbLHyK3w3vpn7"
     },
     {
       "time": "13h30",
       "title": "Almoço - Printemps",
       "description": "Bleu Coupole",
-      "metadata": ["56 Bd Haussmann, 75009 Paris"]
+      "metadata": ["56 Bd Haussmann, 75009 Paris"],
+      "imgUrl": "/assets/dia_3_13h30.jpg",
+      "mapLink": "https://maps.app.goo.gl/FgKLEe35XQwUs9Mn7"
     },
     {
       "time": "15h - 17h",
       "title": "Masterclass - Joalheria Printemps",
       "description": "Apresentação Histórica de uma Marca de Joias Sala Rotonde Presidence. Visita Guiada Histórica e Apresentação ao andar dedicado à joalheria.",
       "metadata": ["56 Bd Haussmann, 75009 Paris"],
-      "imgUrl": "/assets/dia_2_15h_2.jpg"
+      "imgUrl": "/assets/dia_3_15h.jpg",
+      "mapLink": "https://maps.app.goo.gl/MTcTF3nUeSR6DZmAA"
     }
   ],
   "DIA 4": [
@@ -81,27 +89,31 @@
       "title": "Masterclass - Mad Lords",
       "description": "",
       "metadata": ["316 Rue Saint-Honoré 75001"],
-      "imgUrl": "/assets/dia_4_9h30.jpg"
+      "imgUrl": "/assets/dia_4_9h30.jpg",
+      "mapLink": "https://maps.app.goo.gl/hKWnp4AZxgRTN1q7A"
     },
     {
       "time": "13h",
       "title": "Almoço",
       "description": "",
-      "metadata": []
+      "metadata": [],
+      "imgUrl": "/assets/dia_4_13h.jpg"
     },
     {
       "time": "15h - 17h",
       "title": "Masterclass - Vever",
       "description": "",
       "metadata": ["9 Rue de La Paix 75002"],
-      "imgUrl": "/assets/dia_3_15h-17h.jpg"
+      "imgUrl": "/assets/dia_3_15h-17h.jpg",
+      "mapLink": "https://maps.app.goo.gl/UnYBmgzmGbiRLp4S7"
     },
     {
       "time": "17h",
       "title": "Visita Samaritaine",
       "description": "",
       "metadata": ["9 Rue de La Monnaie, 75001 Paris"],
-      "imgUrl": "/assets/dia_3_17h_3.jpg"
+      "imgUrl": "/assets/dia_3_17h_3.jpg",
+      "mapLink": "https://maps.app.goo.gl/pBT2PEPnFBrsCBPX6"
     }
   ],
   "DIA 5": [
@@ -110,34 +122,39 @@
       "title": "Masterclass - Tiffany & Co.",
       "description": "",
       "metadata": ["62 Av. Des Champs Elysées 75008"],
-      "imgUrl": "/assets/dia_5_11h.webp"
+      "imgUrl": "/assets/dia_5_11h.jpg",
+      "mapLink": "https://maps.app.goo.gl/V7whCBKCMv1cRdPG6"
     },
     {
       "time": "13h",
       "title": "Almoço",
       "description": "",
-      "metadata": []
+      "metadata": [],
+      "imgUrl": "/assets/dia_5_13h.jpg"
     },
     {
       "time": "15h - 16h30",
       "title": "Galerie Dior",
       "description": "",
       "metadata": ["11 Rue François Ier 75008"],
-      "imgUrl": "/assets/dia_5_15h-16h30.webp"
+      "imgUrl": "/assets/dia_5_15h-16h30.jpg",
+      "mapLink": "https://maps.app.goo.gl/JJwUfZtNhWUkG7YH7"
     },
     {
       "time": "16h30",
       "title": "Haute Joaillerie Dolce & Gabanna",
       "description": "",
       "metadata": ["54 Avenue Montaigne 75008"],
-      "imgUrl": "/assets/dia_5_16h30.jpg"
+      "imgUrl": "/assets/dia_5_16h30.jpg",
+      "mapLink": "https://maps.app.goo.gl/3b4hZFJTD9F9hSaB9"
     },
     {
       "time": "19h",
       "title": "Exposição Pomelatto",
       "description": "",
       "metadata": ["Palais de Tokyo", "13 Av. Du Président Wilson 75116"],
-      "imgUrl": "/assets/dia_4_19h_2.jpg"
+      "imgUrl": "/assets/dia_5_19h.jpg",
+      "mapLink": "https://maps.app.goo.gl/XbAmpxbtAE7oTLdA7"
     }
   ],
   "DIA 6": [
@@ -145,40 +162,50 @@
       "time": "9h",
       "title": "Saída La Vallée Vilage",
       "description": "",
-      "metadata": ["58 Avenue Grand Armée 75017"]
+      "metadata": ["58 Avenue Grand Armée 75017"],
+      "imgUrl": "/assets/dia_6_9h.jpg",
+      "mapLink": "https://maps.app.goo.gl/4SeG8tyutKiaLVDz7"
     },
     {
       "time": "10h",
       "title": "Café Boas Vindas & Masterclass - Novo Comportamento de Consumo e Sustentabilidade no Mercado de Luxo",
       "description": "",
-      "metadata": []
+      "metadata": ["La Vallée Village"],
+      "imgUrl": "/assets/dia_6_10h.jpg",
+      "mapLink": "https://maps.app.goo.gl/RZPyhdzhpuqQ7uuJ8"
     },
     {
       "time": "11h",
       "title": "Masterclass com Convidado Especial",
       "description": "",
-      "metadata": ["11 Rue François Ier 75008"]
+      "metadata": ["11 Rue François Ier 75008"],
+      "imgUrl": "/assets/dia_6_11h.jpg",
+      "mapLink": "https://maps.app.goo.gl/RZPyhdzhpuqQ7uuJ8"
     },
     {
       "time": "13h",
       "title": "Almoço",
       "description": "",
-      "metadata": ["54 Avenue Montaigne 75008"]
+      "metadata": ["54 Avenue Montaigne 75008"],
+      "imgUrl": "/assets/dia_6_13h.jpg",
+      "mapLink": "https://maps.app.goo.gl/RZPyhdzhpuqQ7uuJ8"
     },
     {
       "time": "17h",
       "title": "Transfer",
       "description": "",
-      "metadata": ["58 Avenue Grande Armée 75017"]
+      "metadata": ["58 Avenue Grande Armée 75017"],
+      "imgUrl": "/assets/dia_6_17h.jpg",
+      "mapLink": "https://maps.app.goo.gl/4SeG8tyutKiaLVDz7"
     }
   ],
   "DIA 7": [
     {
       "time": "All Day",
       "title": "Tour à região de Champagne",
-      "description": "Para a programação na região de Champagne, incluindo as visitas à Mercier e à Pommery e o almoço harmonizado, recomendamos produções elegantes e descomplicadas, adequadas a um dia de experiências e degustações em diferentes ambientes.\n\nPeças em linho, algodão, seda e alfaiataria leve são excelentes escolhas para a ocasião. Como a programação inclui deslocamentos e visitas a áreas internas e externas, o conforto deve prevalecer, especialmente na escolha dos calçados. Tênis discretos, mocassins e sapatilhas são as opções mais indicadas.\n\nA região de Champagne combina tradição, história e sofisticação, mas sem formalidades excessivas. A proposta é privilegiar um visual leve, refinado e confortável para aproveitar plenamente o dia.",
+      "description": "A visita à região de Champagne é um convite a ampliar horizontes por meio da imersão em outro segmento do mercado de luxo, inspirando novas reflexões sobre valor, exclusividade, tradição e legado — atributos que dialogam diretamente com o universo da joalheria.\n\nA programação contempla visitas à Pommery e à Mercier, incluindo almoço harmonizado, escolhidas estrategicamente por representarem modelos distintos de posicionamento, história e experiência de marca.\n\nRecomenda-se um dress code elegante e descomplicado, em sintonia com a proposta do roteiro. Peças em linho, algodão, seda e alfaiataria leve são excelentes opções. Como a programação envolve deslocamentos e visitas a ambientes internos e externos, o conforto deve ser priorizado, especialmente na escolha dos calçados. Tênis discretos, mocassins e sapatilhas são as alternativas mais indicadas.\n\nA região de Champagne combina tradição, patrimônio e sofisticação em um ambiente acolhedor e sem formalidades excessivas. A proposta é adotar um visual leve, refinado e confortável, que permita aproveitar plenamente cada momento da experiência.",
       "metadata": [],
-      "imgUrl": "/assets/dia_6_2.jpg"
+      "imgUrl": "/assets/dia_7.jpg"
     }
   ]
 }

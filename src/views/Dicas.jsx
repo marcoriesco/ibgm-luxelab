@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImageUrl } from '../utils/assets';
 
 export default function Dicas() {
   const tips = [
@@ -34,6 +35,36 @@ export default function Dicas() {
       imageClass: 'sepia',
       paddingClass: 'p-6',
       titleClass: 'font-headline-md text-headline-md mb-2'
+    },
+    {
+      title: "Fundação Louis Vuitton",
+      description: 'Exposição Calder Rêver en Équilibre',
+      imageUrl: '/assets/curadoriacultural_louisvuitton.jpg',
+      colSpan: 'md:col-span-8',
+      imageClass: 'sepia',
+      paddingClass: 'p-6 md:p-8',
+      titleClass: 'font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold mb-2',
+      link: 'https://www.fondationlouisvuitton.fr/fr'
+    },
+    {
+      title: 'Funcação Cartier para a Arte Contemporânea',
+      description: 'Exposição Générale',
+      imageUrl: '/assets/curadoriacultural_cartier.jpg',
+      colSpan: 'md:col-span-4',
+      imageClass: 'sepia contrast-125',
+      paddingClass: 'p-6',
+      titleClass: 'font-headline-md text-headline-md mb-2',
+      link: 'https://www.fondationcartier.com/'
+    },
+    {
+      title: 'Biblioteca Nacional da França',
+      description: '',
+      imageUrl: '/assets/curadoriacultural_biblioteca.jpg',
+      colSpan: 'md:col-span-12',
+      imageClass: 'sepia',
+      paddingClass: 'p-6',
+      titleClass: 'font-headline-md text-headline-md mb-2',
+      link: 'https://www.bnf.fr/fr'
     }
   ];
 
@@ -42,7 +73,7 @@ export default function Dicas() {
       {/* Page Header */}
       <div className="mb-12 md:mb-20 text-center md:text-left">
         <p className="page-subtitle text-secondary mb-4">
-          Curadoria parisiense
+          Curadoria Cultural
         </p>
         <h2 className="page-title text-primary mb-6">
           Dicas
@@ -56,8 +87,9 @@ export default function Dicas() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-[300px] md:auto-rows-[400px]">
         {tips.map((tip, idx) => (
           <a
+            target='_blank'
             key={idx}
-            href="#"
+            href={tip.link}
             className={`${tip.colSpan} group relative overflow-hidden bg-surface-container-lowest border border-outline-variant transition-transform duration-300 hover:scale-[1.01] editorial-shadow flex flex-col`}
           >
             {/* Background Cover Image */}
@@ -65,7 +97,7 @@ export default function Dicas() {
               <img 
                 alt={tip.category} 
                 className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${tip.imageClass}`} 
-                src={tip.imageUrl}
+                src={getImageUrl(tip.imageUrl)}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             </div>
@@ -73,15 +105,6 @@ export default function Dicas() {
             {/* Content Overlays */}
             <div className={`relative z-10 ${tip.paddingClass} flex-grow flex flex-col justify-end text-white select-none`}>
               <div className="flex items-center gap-2 mb-3">
-                <span 
-                  className="material-symbols-outlined text-secondary" 
-                  style={{ fontVariationSettings: '"FILL" 1' }}
-                >
-                  {tip.icon}
-                </span>
-                <span className="font-label-md text-label-md uppercase tracking-widest text-secondary-fixed">
-                  {tip.category}
-                </span>
               </div>
               <h3 className={tip.titleClass}>
                 {tip.title}
@@ -89,11 +112,6 @@ export default function Dicas() {
               <p className="font-body-md text-body-md text-surface-container-low max-w-md">
                 {tip.description}
               </p>
-            </div>
-
-            {/* Camera Indicator Icon in Corner */}
-            <div className="absolute top-4 right-4 z-20 text-white/70">
-              <span className="material-symbols-outlined">photo_camera</span>
             </div>
           </a>
         ))}

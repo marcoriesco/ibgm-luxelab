@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getImageUrl } from '../utils/assets';
 
 export default function ComplementaryContent() {
   const [expandedCards, setExpandedCards] = useState({
@@ -12,15 +13,6 @@ export default function ComplementaryContent() {
       ...prev,
       [index]: !prev[index]
     }));
-  };
-
-  const getImageUrl = (url) => {
-    if (!url) return '';
-    if (url.startsWith('http://') || url.startsWith('https://')) {
-      return url;
-    }
-    const cleanUrl = url.startsWith('/') ? url.slice(1) : url;
-    return `${import.meta.env.BASE_URL || '/'}${cleanUrl}`;
   };
 
   const articles = [
