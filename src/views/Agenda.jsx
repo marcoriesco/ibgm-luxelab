@@ -44,13 +44,13 @@ export default function Agenda() {
   };
 
   const dayLabels = {
-    'DIA 1': 'DIA 1 – 28/06 DOMINGO',
-    'DIA 2': 'DIA 2 – 29/06 SEGUNDA-FEIRA',
-    'DIA 3': 'DIA 3 – 30/06 TERÇA-FEIRA',
-    'DIA 4': 'DIA 4 – 01/07 QUARTA-FEIRA',
-    'DIA 5': 'DIA 5 – 02/07 QUINTA-FEIRA',
-    'DIA 6': 'DIA 6 – 03/07 SEXTA-FEIRA',
-    'DIA 7': 'DIA 7 – 04/07 SÁBADO'
+    'DIA 1': '28/06 DOMINGO',
+    'DIA 2': '29/06 SEGUNDA-FEIRA',
+    'DIA 3': '30/06 TERÇA-FEIRA',
+    'DIA 4': '01/07 QUARTA-FEIRA',
+    'DIA 5': '02/07 QUINTA-FEIRA',
+    'DIA 6': '03/07 SEXTA-FEIRA',
+    'DIA 7': '04/07 SÁBADO'
   };
 
   return (

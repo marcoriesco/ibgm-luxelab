@@ -3,39 +3,39 @@ import { getImageUrl } from '../utils/assets';
 
 export default function Dicas() {
   const tips = [
-    {
-      category: 'Gastronomia',
-      icon: 'restaurant',
-      title: "L'Atelier de Joël Robuchon",
-      description: 'Uma experiência sensorial única que redefine o conceito de alta gastronomia, escolhido pela sua maestria técnica e ambiente intimista.',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAVroz-BMaHznW0Z8jZm0tbILcUgrzqHABiolGJUxnQtgVwu7HfGYpPKYSTusVv1PuQa_imhqkYt3NvWnLBK57plkx2R7R3aYbNLCgUOKaSAjdpfUdDGyeUbX-_31jCgQaue1eVIfrP0m3N7Cx5oA-rjT_QRH5c72OuC2o-O519NoWdU2U8pBOLxhprvuFuWqobyetdksuWtav4JAOwNX23cqTkHQfAPN629-KgoVad0sWJpChyyFyt0-Iwdd7aPcOzqwZ_glG9pYg',
-      colSpan: 'md:col-span-8',
-      imageClass: 'sepia',
-      paddingClass: 'p-6 md:p-8',
-      titleClass: 'font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold mb-2'
-    },
-    {
-      category: 'Boutiques',
-      icon: 'local_mall',
-      title: 'Les Suites',
-      description: 'Selecionamos este endereço pela exclusividade absoluta e pelo serviço de haute couture personalizado que representa o ápice do luxo parisiense.',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAi-o-xrjMKtZ6kpOksyRH2FXUCTCQ6CJQU9GDmHBdUxAag5u4kyLcp9qNyGsJbZsg4aVkAdvMCNLz1QydDaCzgb1f6ZK40XDkjY6tuvAS4NiFsfj_Swy3f019s9uBtNCDIKPxPakjz_me37mACP38FUAwJVG0zqLNwLBOStDfpIZKHrgS3YVw8m0pqE0pYaXX-GJ-PNhvI-ss-T9m2CgKOQq8KWJTpL2M6W-eW-O89Pfe0BBuD-3dpNAMpxpsWXpPiFC-Q_OQij5o',
-      colSpan: 'md:col-span-4',
-      imageClass: 'sepia contrast-125',
-      paddingClass: 'p-6',
-      titleClass: 'font-headline-md text-headline-md mb-2'
-    },
-    {
-      category: 'Locais Ocultos',
-      icon: 'vpn_key',
-      title: 'Passage des Panoramas',
-      description: 'Um mergulho na história de Paris; escolhido por preservar o charme arquitetônico do século XIX em um refúgio longe das multidões.',
-      imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCHjNWcR2XEJ9ApHsWPMH2jPZbFxkwPQj1aD4uQdXFWXorqsxXwm4L7iR1EszDz4CkoMK3go-LoD9Fk0HY8II49wD_CWp-SYCGYvlNArn0NiRiH4mNPJhmc7Wi86rZfdAyIYXpJMC3Ch32pb0AaBC_NK4sTvFA5HqLu1FV4uRaz26DoiBihlsIxCeH1ohAh-mXcVz9d0A_lXjAH-SOqDmoPFeYecaV4o9UjkYYVeqYapiorEnStQnTENbGRurcaQt8X8z0WT_uuR8c',
-      colSpan: 'md:col-span-12',
-      imageClass: 'sepia',
-      paddingClass: 'p-6',
-      titleClass: 'font-headline-md text-headline-md mb-2'
-    },
+    // {
+    //   category: 'Gastronomia',
+    //   icon: 'restaurant',
+    //   title: "L'Atelier de Joël Robuchon",
+    //   description: 'Uma experiência sensorial única que redefine o conceito de alta gastronomia, escolhido pela sua maestria técnica e ambiente intimista.',
+    //   imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAVroz-BMaHznW0Z8jZm0tbILcUgrzqHABiolGJUxnQtgVwu7HfGYpPKYSTusVv1PuQa_imhqkYt3NvWnLBK57plkx2R7R3aYbNLCgUOKaSAjdpfUdDGyeUbX-_31jCgQaue1eVIfrP0m3N7Cx5oA-rjT_QRH5c72OuC2o-O519NoWdU2U8pBOLxhprvuFuWqobyetdksuWtav4JAOwNX23cqTkHQfAPN629-KgoVad0sWJpChyyFyt0-Iwdd7aPcOzqwZ_glG9pYg',
+    //   colSpan: 'md:col-span-8',
+    //   imageClass: 'sepia',
+    //   paddingClass: 'p-6 md:p-8',
+    //   titleClass: 'font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold mb-2'
+    // },
+    // {
+    //   category: 'Boutiques',
+    //   icon: 'local_mall',
+    //   title: 'Les Suites',
+    //   description: 'Selecionamos este endereço pela exclusividade absoluta e pelo serviço de haute couture personalizado que representa o ápice do luxo parisiense.',
+    //   imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAi-o-xrjMKtZ6kpOksyRH2FXUCTCQ6CJQU9GDmHBdUxAag5u4kyLcp9qNyGsJbZsg4aVkAdvMCNLz1QydDaCzgb1f6ZK40XDkjY6tuvAS4NiFsfj_Swy3f019s9uBtNCDIKPxPakjz_me37mACP38FUAwJVG0zqLNwLBOStDfpIZKHrgS3YVw8m0pqE0pYaXX-GJ-PNhvI-ss-T9m2CgKOQq8KWJTpL2M6W-eW-O89Pfe0BBuD-3dpNAMpxpsWXpPiFC-Q_OQij5o',
+    //   colSpan: 'md:col-span-4',
+    //   imageClass: 'sepia contrast-125',
+    //   paddingClass: 'p-6',
+    //   titleClass: 'font-headline-md text-headline-md mb-2'
+    // },
+    // {
+    //   category: 'Locais Ocultos',
+    //   icon: 'vpn_key',
+    //   title: 'Passage des Panoramas',
+    //   description: 'Um mergulho na história de Paris; escolhido por preservar o charme arquitetônico do século XIX em um refúgio longe das multidões.',
+    //   imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCHjNWcR2XEJ9ApHsWPMH2jPZbFxkwPQj1aD4uQdXFWXorqsxXwm4L7iR1EszDz4CkoMK3go-LoD9Fk0HY8II49wD_CWp-SYCGYvlNArn0NiRiH4mNPJhmc7Wi86rZfdAyIYXpJMC3Ch32pb0AaBC_NK4sTvFA5HqLu1FV4uRaz26DoiBihlsIxCeH1ohAh-mXcVz9d0A_lXjAH-SOqDmoPFeYecaV4o9UjkYYVeqYapiorEnStQnTENbGRurcaQt8X8z0WT_uuR8c',
+    //   colSpan: 'md:col-span-12',
+    //   imageClass: 'sepia',
+    //   paddingClass: 'p-6',
+    //   titleClass: 'font-headline-md text-headline-md mb-2'
+    // },
     {
       title: "Fundação Louis Vuitton",
       description: 'Exposição Calder Rêver en Équilibre',
@@ -47,7 +47,7 @@ export default function Dicas() {
       link: 'https://www.fondationlouisvuitton.fr/fr'
     },
     {
-      title: 'Funcação Cartier para a Arte Contemporânea',
+      title: 'Fundação Cartier para a Arte Contemporânea',
       description: 'Exposição Générale',
       imageUrl: '/assets/curadoriacultural_cartier.jpg',
       colSpan: 'md:col-span-4',
@@ -65,21 +65,31 @@ export default function Dicas() {
       paddingClass: 'p-6',
       titleClass: 'font-headline-md text-headline-md mb-2',
       link: 'https://www.bnf.fr/fr'
-    }
+    },
+    // {
+    //   title: 'Museu de Artes Decorativas',
+    //   description: 'Galeria de Joias',
+    //   imageUrl: '',
+    //   colSpan: 'md:col-span-12',
+    //   imageClass: 'sepia',
+    //   paddingClass: 'p-6',
+    //   titleClass: 'font-headline-md text-headline-md mb-2',
+    //   link: 'https://madparis.fr/Galerie-des-Bijoux'
+    // }
   ];
 
   return (
     <div className="animate-fade-in-up w-full pb-28 md:pb-16 pt-8">
       {/* Page Header */}
       <div className="mb-12 md:mb-20 text-center md:text-left">
-        <p className="page-subtitle text-secondary mb-4">
+        {/* <p className="page-subtitle text-secondary mb-4">
           Curadoria Cultural
-        </p>
+        </p> */}
         <h2 className="page-title text-primary mb-6">
-          Dicas
+          CURADORIA CULTURAL
         </h2>
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-          Uma seleção rigorosa de experiências, gastronomia e savoir-faire parisiense, pensada para o viajante que busca a verdadeira essência do luxo imersivo.
+          Uma curadoria de endereços culturais que revelam a essência de Paris através da arte, do design, da arquitetura e do savoir-faire.
         </p>
       </div>
 

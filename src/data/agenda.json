@@ -11,7 +11,7 @@
   ],
   "DIA 2": [
     {
-      "time": "9h - 13h",
+      "time": "9h15 - 13h",
       "title": "Masterclass - O Mercado de Luxo na Joalheria",
       "description": "",
       "metadata": ["58 Avenue Grand Armée 75017"],
@@ -44,7 +44,7 @@
     {
       "time": "17h15",
       "title": "Ação da Sunday Riley",
-      "description": "Experiência exclusiva de marca com a Sunday Riley, explorando as tendências de skincare e beleza no mercado de luxo parisiense.",
+      "description": "Experiência exclusiva de marca, explorando as tendências de skincare e beleza no mercado de luxo parisiense.",
       "metadata": ["Galeries Lafayette - Champs Elysees"],
       "imgUrl": "/assets/dia_2_17h15.jpg"
     },
@@ -68,8 +68,8 @@
     },
     {
       "time": "13h30",
-      "title": "Almoço - Printemps",
-      "description": "Bleu Coupole",
+      "title": "Almoço no Bleu Coupole - Printemps",
+      "description": "",
       "metadata": ["56 Bd Haussmann, 75009 Paris"],
       "imgUrl": "/assets/dia_3_13h30.jpg",
       "mapLink": "https://maps.app.goo.gl/FgKLEe35XQwUs9Mn7"
@@ -77,7 +77,7 @@
     {
       "time": "15h - 17h",
       "title": "Masterclass - Joalheria Printemps",
-      "description": "Apresentação Histórica de uma Marca de Joias Sala Rotonde Presidence. Visita Guiada Histórica e Apresentação ao andar dedicado à joalheria.",
+      "description": "",
       "metadata": ["56 Bd Haussmann, 75009 Paris"],
       "imgUrl": "/assets/dia_3_15h.jpg",
       "mapLink": "https://maps.app.goo.gl/MTcTF3nUeSR6DZmAA"

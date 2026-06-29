@@ -91,7 +91,7 @@ export default function Menu({ isOpen, onClose, activeTab, setActiveTab }) {
         <div className="flex gap-8">
           <a 
             className="text-on-surface-variant hover:text-secondary transition-colors font-medium text-xs uppercase tracking-widest" 
-            href="https://instagram.com" 
+            href="https://instagram.com/ibgmbrasil" 
             target="_blank" 
             rel="noopener noreferrer"
           >

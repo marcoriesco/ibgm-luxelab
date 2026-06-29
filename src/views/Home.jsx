@@ -4,17 +4,35 @@ import { getImageUrl } from '../utils/assets';
 export default function Home({ setActiveTab }) {
   const curatedItems = [
     {
-      category: 'Gastronomia',
-      title: 'Gastronomia',
-      description: 'Experiências culinárias inesquecíveis nos melhores restaurantes estrelados da cidade luz.',
-      imgUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAG9Y0CxwDVM8gZeJGrMwKmWVJJWfC5b_Y0G_4nrAl1e-4pHhw9Tu_2RYF6a7JC3LOGN2oWwMBz484Irc2R2naJ97B0LmjgNI2Y4xROMAHIVoMRfV-9PSj0xcnmPYBJJXfhelO7s0QnQH_US2TZ3hLeItMvK9J-hPqtMENANBmbhiks3DeBvsinWseH-uAzIlxa5WFzPN8h07PdbXO71HUHl2ckTq_0agmKS6ik1SFyPHSDrmiiyoZIKWWvpCKqJFnAqTaNNL-6ZSY'
+      title: "Fundação Louis Vuitton",
+      description: 'Exposição Calder Rêver en Équilibre',
+      imageUrl: '/assets/curadoriacultural_louisvuitton.jpg',
+      colSpan: 'md:col-span-8',
+      imageClass: 'sepia',
+      paddingClass: 'p-6 md:p-8',
+      titleClass: 'font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold mb-2',
+      link: 'https://www.fondationlouisvuitton.fr/fr'
     },
     {
-      category: 'Cultura',
-      title: 'Cultura',
-      description: 'Imersão artística incomparável explorando os acervos dos principais museus e galerias parisienses.',
-      imgUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDuKoMUcJJRi7tdW-UMA2JzOz6_Wg4FyxnOlHSkRUakvNq4bd3lFJ_b3Q-w_LNALU8eB3JzwvuZoTtbAV4Y2WqN5Vih9hWe1BGACg7xFQghfBdr7CEtPgea9qCK6fxBlUbxAMxihc508A9DWhRcBCZZkoY4ziDxrjHduiEbLpXvGVhyvFrym4s2nVnIgz4lpdGi2LBXmiA2SqjKaLLICpYtNe68tow6pLPfEVTUpkmiBfEKtA6W9moHToszj2qCm-g0Fewnus4gEIw'
-    }
+      title: 'Fundação Cartier para a Arte Contemporânea',
+      description: 'Exposição Générale',
+      imageUrl: '/assets/curadoriacultural_cartier.jpg',
+      colSpan: 'md:col-span-4',
+      imageClass: 'sepia contrast-125',
+      paddingClass: 'p-6',
+      titleClass: 'font-headline-md text-headline-md mb-2',
+      link: 'https://www.fondationcartier.com/'
+    },
+    {
+      title: 'Biblioteca Nacional da França',
+      description: '',
+      imageUrl: '/assets/curadoriacultural_biblioteca.jpg',
+      colSpan: 'md:col-span-12',
+      imageClass: 'sepia',
+      paddingClass: 'p-6',
+      titleClass: 'font-headline-md text-headline-md mb-2',
+      link: 'https://www.bnf.fr/fr'
+    },
   ];
 
   return (
@@ -67,7 +85,7 @@ export default function Home({ setActiveTab }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
           <div className="absolute bottom-0 left-0 p-6 text-white w-full">
-            <h3 className="font-headline-md text-headline-md mb-2">Sua Programação</h3>
+            <h3 className="font-headline-md text-headline-md mb-2">Programação</h3>
           </div>
         </div>
       </section>
@@ -88,7 +106,7 @@ export default function Home({ setActiveTab }) {
                 <img 
                   alt={item.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  src={getImageUrl(item.imgUrl)} 
+                  src={getImageUrl(item.imageUrl)} 
                   style={{ filter: 'sepia(0.4) contrast(1.1) brightness(0.9)' }}
                 />
               </div>
